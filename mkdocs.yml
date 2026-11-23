@@ -22,12 +22,14 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - tables
 
 plugins:
   - search
 
 nav:
   - Getting Started: getting-started.md
+  - User Guide: user-guide.md
   - Architecture:
       - UnrealZoo Architecture: unrealzoo-architecture.md
       - UnrealCV+: unrealcv.md
@@ -45,10 +47,13 @@ nav:
       - Weather System: weather-system.md
   - Scenes & Assets:
       - Scene Gallery: scene-gallery.md
+      - Environment List: environment-list.md
       - Environment Naming Convention: environment-naming-convention.md
       - Import Custom Assets: import-custom-assets.md
       - Pickable Object: pickable-object.md
   - Transfer & Tasks:
       - Real-World Transferring: real-world-transferring.md
+      - VLM Agent: vlm-agent.md
       - Active Visual Tracking: active-visual-tracking.md
       - Human Demonstration: human-demonstration.md
+  - Changelog: changelog.md

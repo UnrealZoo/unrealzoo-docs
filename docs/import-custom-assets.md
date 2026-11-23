@@ -81,7 +81,13 @@ Create a new asset:
 
 Configure the asset:
 
-(表格块，待转换)
+| Setting | Value |
+| --- | --- |
+| Chunk ID | 111 |
+| Apply Recursively | Enabled |
+| Cook Rule | Always Cook |
+
+
 
 > Note:  ChunkId shall be any unique positive integer greater than 0 and must be unique within UnrealZoo. The two PAK files must be assigned distinct ChunkIds. Id 0 is reserved and unavailable for use. 
 

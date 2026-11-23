@@ -56,7 +56,16 @@ generate_env_config.py                   # generate environment config json file
 
 > 📌 Available Env_Namein Examplar Binary:
 
-(表格块，待转换)
+| UE4 | UE5 |
+| --- | --- |
+| track_train | Map_ChemicalPlant_1 |
+| Greek_Island | Old_Town |
+| ContainerYard_Day | MiddleEast |
+| ContainerYard_Night | Demo_Roof |
+| SuburbNeighborhood_Day |  |
+| SuburbNeighborhood_Night |  |
+
+
 
 ### 1. Run random agents
 
