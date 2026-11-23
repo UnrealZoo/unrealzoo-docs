@@ -28,7 +28,9 @@ plugins:
   - search
 
 nav:
+  - Overview: overview.md
   - Getting Started: getting-started.md
+  - What's New: whats-new.md
   - User Guide: user-guide.md
   - Architecture:
       - UnrealZoo Architecture: unrealzoo-architecture.md
@@ -56,4 +58,7 @@ nav:
       - VLM Agent: vlm-agent.md
       - Active Visual Tracking: active-visual-tracking.md
       - Human Demonstration: human-demonstration.md
+  - Performance Metrics: performance-metrics.md
+  - Applications: applications.md
   - Changelog: changelog.md
+  - Citation: citation.md

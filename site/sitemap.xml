@@ -9,7 +9,15 @@
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
+         <loc>https://unrealzoo.readthedocs.io/applications/</loc>
+         <lastmod>2026-11-23</lastmod>
+    </url>
+    <url>
          <loc>https://unrealzoo.readthedocs.io/changelog/</loc>
+         <lastmod>2026-11-23</lastmod>
+    </url>
+    <url>
+         <loc>https://unrealzoo.readthedocs.io/citation/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
@@ -57,6 +65,14 @@
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
+         <loc>https://unrealzoo.readthedocs.io/overview/</loc>
+         <lastmod>2026-11-23</lastmod>
+    </url>
+    <url>
+         <loc>https://unrealzoo.readthedocs.io/performance-metrics/</loc>
+         <lastmod>2026-11-23</lastmod>
+    </url>
+    <url>
          <loc>https://unrealzoo.readthedocs.io/pickable-object/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
@@ -89,11 +105,19 @@
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
+         <loc>https://unrealzoo.readthedocs.io/version-compatibility/</loc>
+         <lastmod>2026-11-23</lastmod>
+    </url>
+    <url>
          <loc>https://unrealzoo.readthedocs.io/vlm-agent/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
     <url>
          <loc>https://unrealzoo.readthedocs.io/weather-system/</loc>
+         <lastmod>2026-11-23</lastmod>
+    </url>
+    <url>
+         <loc>https://unrealzoo.readthedocs.io/whats-new/</loc>
          <lastmod>2026-11-23</lastmod>
     </url>
 </urlset>
