@@ -34,42 +34,80 @@ plugins:
         - locale: zh
           name: 中文
           build: true
+          nav_translations:
+            Introduction: 入门
+            Overview: 概览
+            Getting Started: 快速开始
+            What's New: 新特性
+            Version Compatibility: 版本兼容
+            Guides: 使用指南
+            User Guide: 用户指南
+            Architecture: 架构
+            UnrealZoo Architecture: UnrealZoo 架构
+            UnrealCV+: UnrealCV+
+            Gym Interface: Gym 接口
+            Toolkits for Gym Envs: Gym 环境工具包
+            Playable Entities: 可玩实体
+            Human: 人类
+            Animal: 动物
+            Drone: 无人机
+            Drivable Vehicles: 可驾驶车辆
+            Mobile Robots: 移动机器人
+            Systems: 系统
+            Navigation System: 导航系统
+            Weather System: 天气系统
+            Scenes & Assets: 场景与资产
+            Scene Gallery: 场景画廊
+            Environment List: 环境列表
+            Environment Naming Convention: 环境命名规范
+            Import Custom Assets: 导入自定义资产
+            Pickable Object: 可拾取物体
+            Tasks & Transfer: 任务与迁移
+            Real-World Transferring: 真实世界迁移
+            VLM Agent: VLM 智能体
+            Active Visual Tracking: 主动视觉追踪
+            Human Demonstration: 人类演示
+            Reference: 参考
+            Performance Metrics: 性能指标
+            Applications: 应用
+            Changelog: 更新日志
+            Citation: 引用
 
 nav:
-  - 入门 Getting Started:
+  - Introduction:
       - Overview: index.md
       - Getting Started: getting-started.md
       - What's New: whats-new.md
       - Version Compatibility: version-compatibility.md
-  - 使用指南 Guides:
+  - Guides:
       - User Guide: user-guide.md
-  - 架构 Architecture:
+  - Architecture:
       - UnrealZoo Architecture: unrealzoo-architecture.md
       - UnrealCV+: unrealcv.md
       - Gym Interface: gym-interface.md
       - Toolkits for Gym Envs: toolkits-for-gym-envs.md
-  - 可玩实体 Playable Entities:
+  - Playable Entities:
       - Overview: playable-entities.md
       - Human: human.md
       - Animal: animal.md
       - Drone: drone.md
       - Drivable Vehicles: drivable-vehicles.md
       - Mobile Robots: mobile-robots.md
-  - 系统 Systems:
+  - Systems:
       - Navigation System: navigation-system.md
       - Weather System: weather-system.md
-  - 场景与资产 Scenes & Assets:
+  - Scenes & Assets:
       - Scene Gallery: scene-gallery.md
       - Environment List: environment-list.md
       - Environment Naming Convention: environment-naming-convention.md
       - Import Custom Assets: import-custom-assets.md
       - Pickable Object: pickable-object.md
-  - 任务与迁移 Tasks & Transfer:
+  - Tasks & Transfer:
       - Real-World Transferring: real-world-transferring.md
       - VLM Agent: vlm-agent.md
       - Active Visual Tracking: active-visual-tracking.md
       - Human Demonstration: human-demonstration.md
-  - 参考 Reference:
+  - Reference:
       - Performance Metrics: performance-metrics.md
       - Applications: applications.md
       - Changelog: changelog.md
