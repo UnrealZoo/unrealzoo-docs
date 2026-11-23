@@ -1017,10 +1017,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#10" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 文档索引
+        10. 文档索引
       
     </span>
   </a>
@@ -2611,10 +2611,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#10" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 文档索引
+        10. 文档索引
       
     </span>
   </a>
@@ -2698,7 +2698,7 @@
 <tbody>
 <tr>
 <td><strong>高保真渲染</strong></td>
-<td>UE5 的 Nanite + Lumen 提供 photo-realistic 级别的视觉质量</td>
+<td>UE5 的 Nanite + Lumen 提供照片级真实感的视觉质量</td>
 </tr>
 <tr>
 <td><strong>多智能体支持</strong></td>
@@ -2719,13 +2719,13 @@
 </tbody>
 </table>
 <h3 id="_2">架构概览</h3>
-<div class="highlight"><pre><span></span><code>你的算法 (Python)  ←→  Gym API  ←→  UnrealCV  ←→  UE5 仿真环境
+<div class="highlight"><pre><span></span><code>算法 (Python)  ←→  Gym API  ←→  UnrealCV  ←→  UE5 仿真环境
                                               (TCP/UDS)
 </code></pre></div>
 <hr />
 <h2 id="2-5">2. 5 分钟快速上手（最短路径）</h2>
 <blockquote>
-<p><strong>本节目标</strong>：验证安装成功并看到你的第一个仿真</p>
+<p><strong>本节目标</strong>：验证安装成功并运行第一个仿真</p>
 </blockquote>
 <h3 id="21">2.1 设置二进制根目录</h3>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">UnrealEnv</span><span class="o">=</span>/your/path/to/UnrealEnv
@@ -2739,7 +2739,7 @@ pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </s
 <div class="highlight"><pre><span></span><code>python<span class="w"> </span>example/multi_agent/baseline/multi_random_baseline.py<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-e<span class="w"> </span>UnrealTrack-Map_ChemicalPlant_1-ContinuousColor-v0
 </code></pre></div>
-<p>当 UE5 窗口弹出且智能体开始随机移动 → <strong>安装成功</strong> ✓</p>
+<p>UE5 窗口弹出且智能体开始随机移动 → <strong>安装成功</strong> ✓</p>
 <h3 id="24">2.4 尝试键盘控制</h3>
 <div class="highlight"><pre><span></span><code>python<span class="w"> </span>example/navigation/keyboard/navigation_keyboard_human.py<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-e<span class="w"> </span>UnrealNavigation-SuburbNeighborhood_Day-MixedColor-v0
@@ -2834,7 +2834,7 @@ pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </s
 <hr />
 <h2 id="4">4. 运行示例（按任务类别）</h2>
 <blockquote>
-<p><strong>本节目标</strong>：了解如何运行不同任务，并找到你研究的切入点</p>
+<p><strong>本节目标</strong>：了解如何运行不同任务，并找到研究的切入点</p>
 </blockquote>
 <h3 id="41-tracking">4.1 Tracking（目标跟踪）</h3>
 <p>智能体跟踪移动目标（例如动物、其他智能体）。</p>
@@ -2970,7 +2970,7 @@ python<span class="w"> </span>example/multi_agent/HeterogeneousCooperation/Aeria
 <p>⚠️ <strong>交互要点</strong>：靠近交互对象（1.5m 以内）并<strong>按下对应按键</strong>触发，而非自动触发。调整头部视角确保对象在视野内。</p>
 </blockquote>
 <h4 id="_5">自定义键盘映射</h4>
-<p>交互动作通过 <code>animation_dict</code> 映射到 API。你可以在代码中自定义按键：</p>
+<p>交互动作通过 <code>animation_dict</code> 映射到 API。可在代码中自定义按键：</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># 示例：修改 navigation_keyboard_human.py 中的按键映射</span>
 <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">K_f</span><span class="p">:</span>  <span class="c1"># 原 F 键开门</span>
     <span class="n">action</span><span class="p">[</span><span class="s1">&#39;animation&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;open_door&#39;</span>
@@ -3233,7 +3233,8 @@ python<span class="w"> </span>example/multi_agent/HeterogeneousCooperation/Aeria
 <li>Linux：<code>chmod +x /path/to/binary</code></li>
 <li>验证平台匹配（不要在 Windows 上混用 Linux 二进制文件）</li>
 </ul>
-<h2 id="2">2. 文档索引</h2>
+<hr />
+<h2 id="10">10. 文档索引</h2>
 <table>
 <thead>
 <tr>

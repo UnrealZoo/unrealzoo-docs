@@ -1,6 +1,6 @@
 # 环境命名规范
 
-本页介绍在 UnrealZoo-Gym 中创建环境实例的命名规范。理解该格式对于正确初始化训练环境至关重要。
+本页介绍 UnrealZoo-Gym 中环境实例的命名规范。理解该格式对于正确初始化训练环境至关重要。
 
 ## 📝 命名格式
 
@@ -16,11 +16,13 @@ Unreal{task}-{MapName}-{ActionSpace}{ObservationType}-v{version}
 - Navigation - 导航任务（到达目的地）
 - Rendezvous - 多智能体会合任务
 - Rescue - 搜索与救援任务
+
 ### {ActionSpace} - 动作空间
 
 - Discrete - 离散动作空间（预定义动作）
 - Continuous - 连续动作空间（直接控制值）
 - Mixed - 混合动作空间（支持交互动作：拾取、放下、攀爬等）
+
 ### {ObservationType} - 观测类型
 
 - Color - RGB 彩色图像
@@ -32,6 +34,7 @@ Unreal{task}-{MapName}-{ActionSpace}{ObservationType}-v{version}
 - MaskDepth - 掩码 + 深度组合
 - ColorMask - 颜色 + 掩码组合
 - Pose - 智能体位姿（位置 + 旋转）
+
 ## 💡 使用示例
 
 以下是一些常见的环境配置：
@@ -70,7 +73,7 @@ env = gym.make('UnrealTrack-Greek_Island-ContinuousPose-v0')
 
 请参阅 Scene Gallery 获取可用地图及其支持任务的完整列表。
 
-> 📌 提示：如果你需要拾取物体、攀爬或进入载具等交互动作，请使用 Mixed 动作空间。只有 Mixed 支持这些高级交互。
+> 📌 提示：如需拾取物体、攀爬或进入载具等交互动作，请使用 Mixed 动作空间。只有 Mixed 支持这些高级交互。
 
 ## 🔄 版本号
 

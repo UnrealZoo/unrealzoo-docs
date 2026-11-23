@@ -1,8 +1,8 @@
-# VLM Agent
+# VLM 智能体
 
 > 本页面对应 Notion 中尚在撰写的内容，现基于 UnrealZoo 仓库已有材料补充。
 
-UnrealZoo 支持将视觉-语言模型（VLM）智能体接入 photo-realistic 环境，进行具身推理、任务控制与评测。
+UnrealZoo 支持将视觉-语言模型（VLM）智能体接入照片级真实感环境，进行具身推理、任务控制与评测。
 
 ## 相关能力
 

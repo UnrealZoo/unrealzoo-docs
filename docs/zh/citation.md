@@ -1,6 +1,6 @@
 # 引用
 
-如果 UnrealZoo 对你的研究有帮助，请引用我们的 ICCV 2025 论文：
+如果 UnrealZoo 对研究有帮助，请引用 ICCV 2025 论文：
 
 ```bibtex
 @inproceedings{zhong2025unrealzoo,

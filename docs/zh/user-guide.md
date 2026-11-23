@@ -14,7 +14,7 @@ UnrealZoo 是一个基于 **Unreal Engine 5** 的强化学习仿真环境，兼�
 
 | 特性 | 描述 |
 |---------|-------------|
-| **高保真渲染** | UE5 的 Nanite + Lumen 提供 photo-realistic 级别的视觉质量 |
+| **高保真渲染** | UE5 的 Nanite + Lumen 提供照片级真实感的视觉质量 |
 | **多智能体支持** | 同构/异构智能体混合，支持空地协同 |
 | **丰富任务类型** | 跟踪、导航、救援、会合等 |
 | **键盘交互** | 人类玩家可直接介入，支持人机协作 |
@@ -23,7 +23,7 @@ UnrealZoo 是一个基于 **Unreal Engine 5** 的强化学习仿真环境，兼�
 ### 架构概览
 
 ```
-你的算法 (Python)  ←→  Gym API  ←→  UnrealCV  ←→  UE5 仿真环境
+算法 (Python)  ←→  Gym API  ←→  UnrealCV  ←→  UE5 仿真环境
                                               (TCP/UDS)
 ```
 
@@ -31,7 +31,7 @@ UnrealZoo 是一个基于 **Unreal Engine 5** 的强化学习仿真环境，兼�
 
 ## 2. 5 分钟快速上手（最短路径）
 
-> **本节目标**：验证安装成功并看到你的第一个仿真
+> **本节目标**：验证安装成功并运行第一个仿真
 
 ### 2.1 设置二进制根目录
 
@@ -54,7 +54,7 @@ python example/multi_agent/baseline/multi_random_baseline.py \
   -e UnrealTrack-Map_ChemicalPlant_1-ContinuousColor-v0
 ```
 
-当 UE5 窗口弹出且智能体开始随机移动 → **安装成功** ✓
+UE5 窗口弹出且智能体开始随机移动 → **安装成功** ✓
 
 ### 2.4 尝试键盘控制
 
@@ -132,7 +132,7 @@ Unreal{Task}-{MapName}-{ActionType}{ObservationType}-v{reset}
 
 ## 4. 运行示例（按任务类别）
 
-> **本节目标**：了解如何运行不同任务，并找到你研究的切入点
+> **本节目标**：了解如何运行不同任务，并找到研究的切入点
 
 ### 4.1 Tracking（目标跟踪）
 
@@ -219,7 +219,7 @@ python example/multi_agent/HeterogeneousCooperation/Aerial-Ground-Cooperative.py
 
 #### 自定义键盘映射
 
-交互动作通过 `animation_dict` 映射到 API。你可以在代码中自定义按键：
+交互动作通过 `animation_dict` 映射到 API。可在代码中自定义按键：
 
 ```python
 # 示例：修改 navigation_keyboard_human.py 中的按键映射
@@ -445,16 +445,15 @@ obs = env.reset()
 
 ## 9. FAQ
 
-
-
 ### Q1: 二进制启动失败
 
 - 验证 `UnrealEnv` 路径是否正确
 - Linux：`chmod +x /path/to/binary`
 - 验证平台匹配（不要在 Windows 上混用 Linux 二进制文件）
 
+---
 
-## 2. 文档索引
+## 10. 文档索引
 
 | 文档 | 内容 |
 |----------|---------|

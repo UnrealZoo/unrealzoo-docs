@@ -6,6 +6,6 @@
 - 🚁 **UAV-Flow: Flying-on-a-Word** — 语言条件的无人机模仿学习与仿真评测。[[主页](https://prince687028.github.io/UAV-Flow/)] [[论文](https://arxiv.org/abs/2505.15725)]
 - 🧠 **EmbRACE-3K** — 面向语言引导具身推理的 3,000+ 任务数据集。[[主页](https://mxllc.github.io/EmbRACE-3K/)] [[论文](https://arxiv.org/abs/2507.10548)]
 - 🎯 **ROCKET-2** — 跨视角目标对齐与视觉运动策略仿真训练。[[主页](https://craftjarvis.github.io/ROCKET-2/)] [[论文](https://arxiv.org/abs/2503.02505)]
-- 🛟 **RescueBench** — 建立在 UnrealZoo 上的 photo-realistic 多阶段搜救基准。[[论文](https://arxiv.org/abs/2606.01848)] [[代码](https://github.com/UnrealZoo/RescueBench)]
+- 🛟 **RescueBench** — 基于 UnrealZoo 构建的照片级真实感多阶段搜救基准。[[论文](https://arxiv.org/abs/2606.01848)] [[代码](https://github.com/UnrealZoo/RescueBench)]
 
-> 💡 你的项目也用了 UnrealZoo？欢迎提交 PR 加入此列表。
+> 💡 项目也使用了 UnrealZoo？欢迎提交 PR 加入此列表。

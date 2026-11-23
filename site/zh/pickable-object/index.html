@@ -1234,7 +1234,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        💡提示
+        💡 提示
       
     </span>
   </a>
@@ -1619,7 +1619,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        💡提示
+        💡 提示
       
     </span>
   </a>
@@ -1647,16 +1647,16 @@
 
 
 <h1 id="_1">可拾取物体</h1>
-<p>此交互必须与人类角色结合使用</p>
-<p>vbp {character name} set_pickup </p>
-<p>类名： BP_GrabMoveDrop_C </p>
-<p>vbp {instance_name} {bp_function} {args1} {args2} ... </p>
-<h2 id="_2">💡提示</h2>
-<p>你可以通过调用 unrealcv api 手动生成可拾取物体并设置其位置：</p>
-<p>self.unrealcv.set_new_obj(self, class_name, obj_name) </p>
+<p>此交互必须与人类角色结合使用。</p>
+<p>vbp {character name} set_pickup</p>
+<p>类名：BP_GrabMoveDrop_C</p>
+<p>vbp {instance_name} {bp_function} {args1} {args2} ...</p>
+<h2 id="_2">💡 提示</h2>
+<p>可通过调用 UnrealCV API 手动生成可拾取物体并设置其位置：</p>
+<p>self.unrealcv.set_new_obj(self, class_name, obj_name)</p>
 <p>self.unrealcv.set_obj_location(self, obj, loc)</p>
 <p>示例：</p>
-<p>self.unrealcv.set_new_obj(self, BP_GrabMoveDrop_C, pickable_object_1)  </p>
+<p>self.unrealcv.set_new_obj(self, BP_GrabMoveDrop_C, pickable_object_1)</p>
 <p>self.unrealcv.set_obj_location(self, pickable_object_1, [0,0,100])</p>
 
 

@@ -2,9 +2,9 @@
 
 ![UnrealZoo Overview](assets/overview.png)
 
-UnrealZoo 是一个建立在 **Unreal Engine** 上的 photo-realistic 3D 虚拟世界集合，旨在反映开放世界的复杂性与多样性。它提供了多种可用于具身智能的可玩实体（playable entities），包括人类角色、机器人、车辆和动物。
+UnrealZoo 是基于 **Unreal Engine** 构建的照片级真实感 3D 虚拟世界集合，旨在反映开放世界的复杂性与多样性。它提供多种可用于具身智能的可玩实体（playable entities），包括人类角色、机器人、车辆和动物。
 
-UnrealZoo 集成 [UnrealCV](https://unrealcv.org/)，提供了一套易用的 Python API 和工具，支持多种潜在应用，如数据标注与采集、环境增强、分布式训练，以及智能体评测。
+UnrealZoo 集成 [UnrealCV](https://unrealcv.org/)，提供一套易用的 Python API 和工具，支持多种潜在应用，如数据标注与采集、环境增强、分布式训练，以及智能体评测。
 
 > 💡 本仓库（unrealzoo-gym）提供基于 UnrealCV API 的 gym 接口，兼容 OpenAI Gym，支持 UnrealZoo 中的高层智能体-环境交互。
 
@@ -12,7 +12,7 @@ UnrealZoo 集成 [UnrealCV](https://unrealcv.org/)，提供了一套易用的 Py
 
 | 平台能力 | 研究价值 |
 |---|---|
-| **100+ photo-realistic 世界与异构智能体** | 在城市场景、自然环境、建筑与工业场景中，用人、机器人、车辆和动物评测具身系统 |
+| **100+ 照片级真实感世界与异构智能体** | 在城市场景、自然环境、建筑与工业场景中，用人、机器人、车辆和动物评测具身系统 |
 | **具身感知** | 在同一个交互世界中组合 RGB-D、掩码、全景、LiDAR 与占用（occupancy）观测 |
 | **交互式多智能体环境** | 研究导航、操作、车辆交互、追踪与异构协同 |
 | **运行时可扩展性** | 加载外部 3DGS 环境、定制资产与外观，复用现有智能体与任务 API |

@@ -1,8 +1,6 @@
 # 更新日志
 
-# 更新日志
-
-本文件记录了本项目所有值得注意的变更。
+本文件记录本项目所有值得注意的变更。
 
 ## [v3.0-stage] - 2026-04-13
 
@@ -10,33 +8,33 @@
 
 ### 新增
 
-- 在 `UnrealCv_base.set_population` 中新增混合类别种群初始化，支持按槽位配置类别列表，例如 `['player', 'player', 'player', 'drone']`。
+- `UnrealCv_base.set_population` 新增混合类别种群初始化，支持按槽位配置类别列表，例如 `['player', 'player', 'player', 'drone']`。
 - 新增基于模板的智能体动态生成流水线：
-  - 环境 JSON 可以仅包含模板（无需预置智能体名称），
-  - 运行时生成使用 `asset_path` + `spawn_from_path`，
+  - 环境 JSON 可仅包含模板（无需预置智能体名称）；
+  - 运行时生成使用 `asset_path` + `spawn_from_path`；
   - 智能体槽位在 `set_population` 期间实例化。
 - 新增异构协作示例：`example/multi_agent/HeterogeneousCooperation/Aerial-Ground-Cooperative.py`。
   - 3 个地面智能体 + 1 架无人机。
   - 无人机支持 `DronePoseTracker` 自动跟随和键盘覆盖。
   - 稳定的逐回合编队设置，无人机生成高度 +2m，以及 2x2 观测拼接。
 - 新增键盘动物追踪示例：`example/tracking/basic/tracking_keyboard_animal.py`。
-- 在 `generate_env_config.py` 中新增平台二进制模板工作流：
+- `generate_env_config.py` 新增平台二进制模板工作流：
   - `ENV_BIN_TEMPLATE_LINUX`
   - `ENV_BIN_TEMPLATE_WIN`
   - `ENV_BIN_TEMPLATE_MAC`
   - 新增辅助流程，用于在 JSON 中生成各平台的 `env_bin` 字段。
-- 在生成的 JSON 中新增默认导航目标模式：
+- 生成的 JSON 新增默认导航目标模式：
   - `env.targets.Point: []`
 
 ### 变更
 
 - 重构 `generate_env_config.py` 以支持：
-  - 基于模板的二进制路径生成，
-  - 使用 `asset_path` 的统一智能体模板（替代固定的预置 actor 条目），
+  - 基于模板的二进制路径生成；
+  - 使用 `asset_path` 的统一智能体模板（替代固定的预置 actor 条目）；
   - UE5 备份字段复用（`height`、`safe_start`、`reset_area`）。
 - 更新基础环境生成行为（`UnrealCv_base`）：
-  - 支持仅模板启动和延迟种群生成，
-  - 生成混合智能体时使用类别感知模板，
+  - 支持仅模板启动和延迟种群生成；
+  - 生成混合智能体时使用类别感知模板；
   - 随动态种群变化同步更新动作/观测/相机槽位。
 - 更新导航环境行为（`navigation.py`、`navigationmulti.py`）：
   - 不再隐式填充目标；
@@ -49,8 +47,8 @@
   - `E` -> 拾取
 - 更新无人机键盘演示，支持 4 自由度连续控制（`vx`、`vy`、`vz`、`vyaw`）及任务介绍显示流程。
 - 更新 `Character_API` 中的交互动画映射：
-  - `open_door` 使用默认 `state=1`，
-  - `enter_vehicle` 映射到 `enter_exit_car(player_index=0)`，
+  - `open_door` 使用默认 `state=1`；
+  - `enter_vehicle` 映射到 `enter_exit_car(player_index=0)`；
   - 标准化拾取动作映射。
 - 将 `example/` 重组为更清晰的任务导向结构：
   - tracking
@@ -144,10 +142,6 @@ v3.0 阶段 UnrealCV+ 重要变更摘要。
   - Python API：
     - `spawn_object_from_path()`
   - 当输入看起来像资产路径时，`set_new_obj()` 现在会给出更清晰的提示，并可通过 `spawn_object_from_path()` 自动重试。
-
----
-
-
 
 ---
 

@@ -654,6 +654,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Toolkits for Gym Envs
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -670,6 +688,86 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        包装器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="包装器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigUE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timedilation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TimeDilation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#earlydone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EarlyDone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randompopulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RandomPopulation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1561,6 +1659,75 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        包装器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="包装器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConfigUE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timedilation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TimeDilation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#earlydone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EarlyDone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randompopulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RandomPopulation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1580,11 +1747,11 @@
 
 
 <h1 id="gym">Gym 环境工具包</h1>
-<h1 id="_1">包装器：</h1>
-<p>我们还提供了几个包装器，你可以用它们以各种方式修改环境。</p>
+<h2 id="_1">包装器</h2>
+<p>此外还提供若干包装器，可用于以不同方式修改环境。</p>
 <h3 id="configue">ConfigUE</h3>
 <ul>
-<li>ConfigUEWrapper 用于配置 Unreal Engine 二进制的启动设置。它可用于设置 Unreal Engine 环境的各类参数，例如离屏渲染、观测分辨率、通信协议、docker 等。
+<li>ConfigUEWrapper 用于配置 Unreal Engine 二进制的启动设置，可设置 Unreal Engine 环境的各类参数，例如离屏渲染、观测分辨率、通信协议、docker 等。
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">gym_unrealcv.envs.wrappers</span><span class="w"> </span><span class="kn">import</span> <span class="n">configUE</span> 
 <span class="n">configUE</span><span class="o">.</span><span class="n">ConfigUEWrapper</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">docker</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">resolution</span><span class="o">=</span><span class="p">(</span><span class="mi">160</span><span class="p">,</span> <span class="mi">160</span><span class="p">),</span> <span class="n">display</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                          <span class="n">offscreen</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">use_opengl</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">nullrhi</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
@@ -1593,21 +1760,21 @@
 </ul>
 <h3 id="timedilation">TimeDilation</h3>
 <ul>
-<li>TimeDilationWrapper 用于控制 Unreal Engine 环境中仿真的速度。这对于为不同任务模拟各种 FPS 情况很有用。
+<li>TimeDilationWrapper 用于控制 Unreal Engine 环境中仿真的速度，适用于为不同任务模拟各种 FPS 情况。
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">gym_unrealcv.envs.wrappers</span><span class="w"> </span><span class="kn">import</span> <span class="n">time_dilation</span>
 <span class="n">env</span> <span class="o">=</span> <span class="n">time_dilation</span><span class="o">.</span><span class="n">TimeDilationWrapper</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">reference_fps</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">update_steps</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span> 
 </code></pre></div></li>
 </ul>
 <h3 id="earlydone">EarlyDone</h3>
 <ul>
-<li>EarlyDoneWrapper 用于根据特定条件提前结束 episode。用户可针对不同任务修改源代码。这对于防止 episode 运行时间过长很有用。
+<li>EarlyDoneWrapper 用于根据特定条件提前结束 episode。用户可针对不同任务修改源代码。该包装器可防止 episode 运行时间过长。
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">gym_unrealcv.envs.wrappers</span><span class="w"> </span><span class="kn">import</span> <span class="n">early_done</span>
 <span class="n">env</span> <span class="o">=</span> <span class="n">early_done</span><span class="o">.</span><span class="n">EarlyDoneWrapper</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">max_lost_steps</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 </code></pre></div></li>
 </ul>
 <h3 id="randompopulation">RandomPopulation</h3>
 <ul>
-<li>RandomPopulationWrapper 会用指定数量的 agent 随机填充环境：
+<li>RandomPopulationWrapper 会用指定数量的智能体随机填充环境：
 <div class="highlight"><pre><span></span><code><span class="n">env</span> <span class="o">=</span> <span class="n">augmentation</span><span class="o">.</span><span class="n">RandomPopulationWrapper</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">num_min</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">num_max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">random_target</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </code></pre></div></li>
 </ul>

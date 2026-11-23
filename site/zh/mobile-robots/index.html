@@ -1580,7 +1580,7 @@
 
 
 <h1 id="_1">移动机器人</h1>
-<p>移动机器人与人类角色共享同一个类（BP_character_C），开发者可以直接使用 set_app 将网格体更改为机器狗（id:20~33）。</p>
+<p>移动机器人与人类角色共享同一个类（BP_character_C），开发者可直接使用 set_app 将网格体更改为机器狗（id:20~33）。</p>
 <table>
 <thead>
 <tr>
@@ -1595,19 +1595,19 @@
 <td>set_move</td>
 <td>{angular} {velocity}</td>
 <td></td>
-<td>通过角度和线速度控制对象执行单步移动：</td>
+<td>通过角度和线速度控制对象执行单步移动</td>
 </tr>
 <tr>
 <td>nav_to_goal</td>
 <td>{x} {y} {z}</td>
 <td></td>
-<td>为智能体分配一个导航目标，使用 Navmesh 和内置的 AI-controller 插件自动控制其移动，通过最短路径到达目标。（目标必须在环境中可达。）</td>
+<td>为智能体分配导航目标，使用 Navmesh 和内置 AI-controller 插件自动控制其移动，通过最短路径到达目标（目标必须在环境中可达）</td>
 </tr>
 <tr>
 <td>nav_to_target</td>
 <td>{target_object} {distance}</td>
 <td></td>
-<td>将当前智能体分配到一个 target_object，利用 Navmesh 和 AI controller 动态跟随 target_object，并在距离其指定距离处停止</td>
+<td>将当前智能体分配至 target_object，利用 Navmesh 和 AI controller 动态跟随 target_object，并在距离其指定距离处停止</td>
 </tr>
 <tr>
 <td>nav_random</td>
@@ -1655,43 +1655,31 @@
 <td>set_photo_mode</td>
 <td></td>
 <td></td>
-<td>将视角切换为智能体的第一人称视角。再次执行该命令时切换回第三人称视角。</td>
+<td>将视角切换为智能体的第一人称视角。再次执行该命令时切换回第三人称视角</td>
 </tr>
 <tr>
 <td>generate_nav_goal</td>
 <td></td>
-<td>{ ”nav_goal”: “X=0.00 Y=0.00 Z=0.00” }</td>
-<td>在智能体周围生成一个可达的目标位置，返回该位置。</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>{ "nav_goal": "X=0.00 Y=0.00 Z=0.00" }</td>
+<td>在智能体周围生成一个可达的目标位置，返回该位置</td>
 </tr>
 <tr>
 <td>get_hit</td>
 <td></td>
-<td>{ ”hitresult”: “true(or false)” }</td>
-<td>获取智能体对象（与其他目标或静态物体）的碰撞标志，返回 true 或 false。</td>
+<td>{ "hitresult": "true(or false)" }</td>
+<td>获取智能体对象（与其他目标或静态物体）的碰撞标志，返回 true 或 false</td>
 </tr>
 <tr>
 <td>get_speed</td>
 <td></td>
-<td>{ ”speed”: “0.000” }</td>
+<td>{ "speed": "0.000" }</td>
 <td>获取智能体的线速度，返回该值</td>
 </tr>
 <tr>
 <td>get_angle</td>
 <td></td>
-<td>{ ”angle”: “0.000” }</td>
+<td>{ "angle": "0.000" }</td>
 <td>获取智能体的角速度，返回该值</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 </tbody>
 </table>

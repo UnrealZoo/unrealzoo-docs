@@ -848,6 +848,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drivable Vehicles
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -864,6 +882,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚗 汽车
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏍️ 摩托车
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1561,6 +1620,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚗 汽车
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏍️ 摩托车
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1580,7 +1669,7 @@
 
 
 <h1 id="_1">可驾驶车辆</h1>
-<h1 id="_2">🚗汽车</h1>
+<h2 id="_2">🚗 汽车</h2>
 <p>类名：BP_BaseCar_C</p>
 <table>
 <thead>
@@ -1596,7 +1685,7 @@
 <td>set_move</td>
 <td>{angular} {velocity}</td>
 <td></td>
-<td>使用角度和线速度控制物体执行单步移动：</td>
+<td>使用角度和线速度控制物体执行单步移动</td>
 </tr>
 <tr>
 <td>set_stop</td>
@@ -1608,13 +1697,7 @@
 <td>nav_to_goal</td>
 <td>{x} {y} {z}</td>
 <td></td>
-<td>为智能体分配一个导航目标，并使用 Nav mesh 计算合法路径并控制目标移动至该目标。（目标必须在环境中可达。）</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>为智能体分配导航目标，使用 Nav mesh 计算合法路径并控制目标移动至该目标（目标必须在环境中可达）</td>
 </tr>
 <tr>
 <td>set_speed</td>
@@ -1656,7 +1739,7 @@
 <td>set_viewport</td>
 <td></td>
 <td></td>
-<td>执行此命令后，Game 窗口将显示智能体的第一人称视角。再次输入该命令可将窗口切换为自由漫游视角。</td>
+<td>执行此命令后，Game 窗口将显示智能体的第一人称视角。再次输入该命令可将窗口切换为自由漫游视角</td>
 </tr>
 <tr>
 <td>enter_exit_car</td>
@@ -1666,7 +1749,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="_3">🏍️摩托车</h1>
+<h2 id="_3">🏍️ 摩托车</h2>
 <p>类名：MotorBikes_C</p>
 <table>
 <thead>
@@ -1682,13 +1765,13 @@
 <td>set_move</td>
 <td>{angular} {velocity}</td>
 <td></td>
-<td>使用角度和线速度控制物体执行单步移动：</td>
+<td>使用角度和线速度控制物体执行单步移动</td>
 </tr>
 <tr>
 <td>nav_to_goal</td>
 <td>{x} {y} {z}</td>
 <td></td>
-<td>为智能体分配一个导航目标，并使用 Nav mesh 计算合法路径并控制目标移动至该目标。（目标必须在环境中可达。）</td>
+<td>为智能体分配导航目标，使用 Nav mesh 计算合法路径并控制目标移动至该目标（目标必须在环境中可达）</td>
 </tr>
 <tr>
 <td>set_speed</td>
@@ -1712,7 +1795,7 @@
 <td>set_viewport</td>
 <td></td>
 <td></td>
-<td>执行此命令后，Game 窗口将显示智能体的第一人称视角。再次输入该命令可将窗口切换为自由漫游视角。</td>
+<td>执行此命令后，Game 窗口将显示智能体的第一人称视角。再次输入该命令可将窗口切换为自由漫游视角</td>
 </tr>
 </tbody>
 </table>

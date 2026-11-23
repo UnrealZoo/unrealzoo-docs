@@ -1484,6 +1484,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1500,6 +1518,108 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v30-stage-2026-04-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [v3.0-stage] - 2026-04-13
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v3.0-stage] - 2026-04-13">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        新增
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        变更
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        修复
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        兼容性说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unrealcv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UnrealCV+ 插件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1561,6 +1681,97 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v30-stage-2026-04-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        [v3.0-stage] - 2026-04-13
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v3.0-stage] - 2026-04-13">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        新增
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        变更
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        修复
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        兼容性说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unrealcv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UnrealCV+ 插件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1580,39 +1791,38 @@
 
 
 <h1 id="_1">更新日志</h1>
-<h1 id="_2">更新日志</h1>
-<p>本文件记录了本项目所有值得注意的变更。</p>
+<p>本文件记录本项目所有值得注意的变更。</p>
 <h2 id="v30-stage-2026-04-13">[v3.0-stage] - 2026-04-13</h2>
 <p>本次阶段性更新聚焦于任务统一化、混合种群支持、键盘交互升级以及示例重组。</p>
-<h3 id="_3">新增</h3>
+<h3 id="_2">新增</h3>
 <ul>
-<li>在 <code>UnrealCv_base.set_population</code> 中新增混合类别种群初始化，支持按槽位配置类别列表，例如 <code>['player', 'player', 'player', 'drone']</code>。</li>
+<li><code>UnrealCv_base.set_population</code> 新增混合类别种群初始化，支持按槽位配置类别列表，例如 <code>['player', 'player', 'player', 'drone']</code>。</li>
 <li>新增基于模板的智能体动态生成流水线：</li>
-<li>环境 JSON 可以仅包含模板（无需预置智能体名称），</li>
-<li>运行时生成使用 <code>asset_path</code> + <code>spawn_from_path</code>，</li>
+<li>环境 JSON 可仅包含模板（无需预置智能体名称）；</li>
+<li>运行时生成使用 <code>asset_path</code> + <code>spawn_from_path</code>；</li>
 <li>智能体槽位在 <code>set_population</code> 期间实例化。</li>
 <li>新增异构协作示例：<code>example/multi_agent/HeterogeneousCooperation/Aerial-Ground-Cooperative.py</code>。</li>
 <li>3 个地面智能体 + 1 架无人机。</li>
 <li>无人机支持 <code>DronePoseTracker</code> 自动跟随和键盘覆盖。</li>
 <li>稳定的逐回合编队设置，无人机生成高度 +2m，以及 2x2 观测拼接。</li>
 <li>新增键盘动物追踪示例：<code>example/tracking/basic/tracking_keyboard_animal.py</code>。</li>
-<li>在 <code>generate_env_config.py</code> 中新增平台二进制模板工作流：</li>
+<li><code>generate_env_config.py</code> 新增平台二进制模板工作流：</li>
 <li><code>ENV_BIN_TEMPLATE_LINUX</code></li>
 <li><code>ENV_BIN_TEMPLATE_WIN</code></li>
 <li><code>ENV_BIN_TEMPLATE_MAC</code></li>
 <li>新增辅助流程，用于在 JSON 中生成各平台的 <code>env_bin</code> 字段。</li>
-<li>在生成的 JSON 中新增默认导航目标模式：</li>
+<li>生成的 JSON 新增默认导航目标模式：</li>
 <li><code>env.targets.Point: []</code></li>
 </ul>
-<h3 id="_4">变更</h3>
+<h3 id="_3">变更</h3>
 <ul>
 <li>重构 <code>generate_env_config.py</code> 以支持：</li>
-<li>基于模板的二进制路径生成，</li>
-<li>使用 <code>asset_path</code> 的统一智能体模板（替代固定的预置 actor 条目），</li>
+<li>基于模板的二进制路径生成；</li>
+<li>使用 <code>asset_path</code> 的统一智能体模板（替代固定的预置 actor 条目）；</li>
 <li>UE5 备份字段复用（<code>height</code>、<code>safe_start</code>、<code>reset_area</code>）。</li>
 <li>更新基础环境生成行为（<code>UnrealCv_base</code>）：</li>
-<li>支持仅模板启动和延迟种群生成，</li>
-<li>生成混合智能体时使用类别感知模板，</li>
+<li>支持仅模板启动和延迟种群生成；</li>
+<li>生成混合智能体时使用类别感知模板；</li>
 <li>随动态种群变化同步更新动作/观测/相机槽位。</li>
 <li>更新导航环境行为（<code>navigation.py</code>、<code>navigationmulti.py</code>）：</li>
 <li>不再隐式填充目标；</li>
@@ -1625,8 +1835,8 @@
 <li><code>E</code> -&gt; 拾取</li>
 <li>更新无人机键盘演示，支持 4 自由度连续控制（<code>vx</code>、<code>vy</code>、<code>vz</code>、<code>vyaw</code>）及任务介绍显示流程。</li>
 <li>更新 <code>Character_API</code> 中的交互动画映射：</li>
-<li><code>open_door</code> 使用默认 <code>state=1</code>，</li>
-<li><code>enter_vehicle</code> 映射到 <code>enter_exit_car(player_index=0)</code>，</li>
+<li><code>open_door</code> 使用默认 <code>state=1</code>；</li>
+<li><code>enter_vehicle</code> 映射到 <code>enter_exit_car(player_index=0)</code>；</li>
 <li>标准化拾取动作映射。</li>
 <li>将 <code>example/</code> 重组为更清晰的任务导向结构：</li>
 <li>tracking</li>
@@ -1636,13 +1846,13 @@
 <li>更新 <code>example/README.md</code>，加入新的分类示例索引。</li>
 <li>更新根目录 <code>README.md</code> 的示例命令为新路径。</li>
 </ul>
-<h3 id="_5">修复</h3>
+<h3 id="_4">修复</h3>
 <ul>
 <li>通过统一运行时映射，修复了交互动作不匹配导致拾取动画出现 <code>KeyError</code> 的问题。</li>
 <li>通过使配置生成与所需键对齐，修复了非人类模板的混合动作模式不匹配问题。</li>
 <li>修复了无人机协作演示的控制优先级，使键盘输入仅在按键按下时覆盖自动追踪器。</li>
 </ul>
-<h3 id="_6">兼容性说明</h3>
+<h3 id="_5">兼容性说明</h3>
 <ul>
 <li>导航任务现在要求地图 JSON 中存在 <code>env.targets.Point</code>（可以为空列表）。</li>
 <li>空列表会触发警告但不会崩溃；在设置目标之前导航奖励将为 0。</li>
@@ -1653,7 +1863,7 @@
 <li>依赖固定 <code>agents.{name}</code> 预置的旧工作流应迁移到基于模板的 <code>agents.{category}</code> + 运行时种群。</li>
 <li><strong>为何迁移</strong>：基于模板的生成将地图 JSON 与实例数量解耦，从而无需编辑 JSON 即可实现动态种群变化和混合类别实验。</li>
 </ul>
-<h3 id="_7">注意</h3>
+<h3 id="_6">注意</h3>
 <ul>
 <li>部分旧示例已被移动/替换；请优先使用 <code>example/README.md</code> 中列出的新路径。</li>
 </ul>
@@ -1753,7 +1963,6 @@
 <li>当输入看起来像资产路径时，<code>set_new_obj()</code> 现在会给出更清晰的提示，并可通过 <code>spawn_object_from_path()</code> 自动重试。</li>
 </ul>
 <hr />
-<hr />
 <h1 id="unrealzoo-v31">UnrealZoo v3.1 更新日志</h1>
 <p>状态：<strong>开发快照</strong>
 版本：<strong>v3.1</strong>
@@ -1768,7 +1977,7 @@
 <li>新增 <code>nav_update_collision</code>，用于在 reset 期间缩放或外观变化后刷新碰撞包络，同时提供导航状态、停止和手动释放 API。</li>
 <li><strong>需要包含此功能的更新版 v3.1.4 环境包；</strong> 仅更新 Python 仓库是不够的。请参阅<a href="../example/new_features/README.md#3d-drone-navigation-v314">使用指南</a>。</li>
 </ul>
-<h2 id="_8">发布亮点</h2>
+<h2 id="_7">发布亮点</h2>
 <table>
 <thead>
 <tr>
@@ -1815,7 +2024,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_9">新增</h2>
+<h2 id="_8">新增</h2>
 <h3 id="unrealzoo">UnrealZoo 功能</h3>
 <h4 id="1-lidar">1. LiDAR 观测与建图</h4>
 <ul>
@@ -1869,24 +2078,24 @@ vget /scene/occupancy/spec [profile] [method]
 <li>运行时加载使用已导入并 cook 的高斯泼溅资产；原始 PLY 导入是编辑器/cooking 步骤，而非环境 reset 操作。</li>
 </ul>
 <h3 id="unrealcv_1">UnrealCV+ 用户可见改进</h3>
-<h4 id="_10">渲染与观测性能</h4>
+<h4 id="_9">渲染与观测性能</h4>
 <ul>
 <li>当前开发构建的<a href="https://docs.unrealcv.org/en/latest/reference/unrealzoo_capture_transport.html">共享内存采集</a>在序列化端到端测试中，1080p 下平均 <code>23.61 FPS</code>，2K 下平均 <code>22.40 FPS</code>，4K 下平均 <code>16.25 FPS</code>。</li>
 <li>这些数字衡量的是完整客户端采集延迟，而非未加载视口帧率；仅传输的闭源构建结果在 UnrealCV 采集传输参考文档中单独记录。</li>
 <li>改进了连续观测循环、交互式智能体控制和数据集录制工作负载的响应性。</li>
 <li>降低了从活动 UnrealZoo 场景采集多种视觉模态的实际成本。</li>
 </ul>
-<h4 id="_11">全景采集扩展</h4>
+<h4 id="_10">全景采集扩展</h4>
 <ul>
 <li>将等距柱状全景采集从 lit 输出扩展到 normal、object-mask 和 depth 模态。</li>
 <li>新增可配置的全景输出分辨率。</li>
 </ul>
-<h4 id="_12">内置录制工作流</h4>
+<h4 id="_11">内置录制工作流</h4>
 <ul>
 <li>改进内置相机和 actor 录制工作流，以支持持续数据集采集。</li>
 <li>新增用户对输出通道、帧率、时长、预热、暂停/恢复行为和输出命名的控制。</li>
 </ul>
-<h4 id="_13">相机、标注和动态内容工作流</h4>
+<h4 id="_12">相机、标注和动态内容工作流</h4>
 <ul>
 <li>新增稳定相机标识符，同时保持旧版数字相机脚本兼容。</li>
 <li>扩展场景和对象标注控制，用于数据集生成。</li>
@@ -1897,14 +2106,14 @@ vget /scene/occupancy/spec [profile] [method]
 <li>新增 UnrealCV 对象命令，用于 Go1 MuJoCo 设置、同步步进、观测获取、策略动作和策略命令。</li>
 </ul>
 <p>其中若干 UnrealCV+ 能力首次出现在 v3.0 阶段。此处列出是因为本次发布将其转化为完整的用户可见工作流，而非声称每一项都是在本周期首次引入。</p>
-<h2 id="_14">变更</h2>
+<h2 id="_13">变更</h2>
 <ul>
 <li>新功能示例默认连接到已运行的 Unreal Editor/PIE 会话，而非静默启动第二个 Unreal 进程。</li>
 <li>街道建图示例默认使用生成的玩家相机，并将 Unreal 世界位置视为厘米，而 LiDAR XYZ 值为米。</li>
 <li>修正了新可视化示例中的 RGB 颜色还原。</li>
 <li>动态内容示例区分文件系统 PAK 路径、Unreal 包路径和完整 Unreal 对象路径，而非将其视为可互换的字符串。</li>
 </ul>
-<h2 id="_15">兼容性与限制</h2>
+<h2 id="_14">兼容性与限制</h2>
 <ul>
 <li>当传感器与相机不共位时，必须应用相机到 LiDAR 的外参。仅当该假设被明确展示时，示例才可假设为单位变换。</li>
 <li>Unreal Engine 位置使用厘米。LiDAR 和可视化示例暴露公制坐标；转换必须恰好执行一次。</li>
@@ -1914,7 +2123,7 @@ vget /scene/occupancy/spec [profile] [method]
 <li>社交动画命令接受已 cook 包中存在的名称；未知名称应视为错误而非静默替换。</li>
 <li>UnrealCV+ 的可用性与经 UnrealZoo 测试的插件构建绑定。当脚本还需面向上游或旧版 UnrealCV 安装时，应查询命令/帮助可用性。</li>
 </ul>
-<h2 id="_16">示例与媒体</h2>
+<h2 id="_15">示例与媒体</h2>
 <ul>
 <li><a href="../example/new_features/suburb_street_slam.py"><code>suburb_street_slam.py</code></a>
   演示玩家控制的 LiDAR 街道建图。</li>
@@ -1940,7 +2149,7 @@ vget /scene/occupancy/spec [profile] [method]
 <li><a href="figs/new_features/social_animation.gif"><code>social_animation.gif</code></a>：多个 UnrealZoo 角色播放运行时选择的社交动画。</li>
 </ul>
 <p>环境特定使用问题和详细行为可在 <a href="https://github.com/UnrealZoo/gym-unrealzoo/discussions">GitHub Discussions</a> 中讨论。</p>
-<h2 id="_17">待办</h2>
+<h2 id="_16">待办</h2>
 <ul>
 <li>[ ] MuJoCo Unitree G1 集成与示例。</li>
 </ul>

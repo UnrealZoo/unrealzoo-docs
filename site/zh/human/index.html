@@ -1580,7 +1580,7 @@
 
 
 <h1 id="human">Human</h1>
-<p>类名：BP_Character_C </p>
+<p>类名：BP_Character_C</p>
 <p>新增动画（躺下、攀爬、蹲下、滑行等）</p>
 <p>vbp {instance_name} {bp_function} {args 1} {args2}…</p>
 <table>
@@ -1597,25 +1597,25 @@
 <td>set_move</td>
 <td>{angular} {velocity}</td>
 <td></td>
-<td>通过角度和线速度控制对象进行单步移动：</td>
+<td>通过角度和线速度控制对象进行单步移动。</td>
 </tr>
 <tr>
 <td>nav_to_goal</td>
 <td>{x} {y} {z}</td>
 <td></td>
-<td>为智能体分配一个导航目标，并使用 Navmesh 和 AI-controller 内置插件自动控制其通过最短路径到达目标。（目标必须在环境中可达。）</td>
+<td>为智能体分配导航目标，利用 Navmesh 和 AI-controller 内置插件自动控制其沿最短路径到达目标。（目标必须在环境中可达。）</td>
 </tr>
 <tr>
 <td>nav_random</td>
 <td>{radius} {loop}</td>
-<td>{ ”random_location”:  “X=0.00 Y=0.00 Z=0.00” }</td>
-<td>控制智能体随机游走。智能体在自身半径范围内随机选择一个点进行导航。loop 参数控制是否连续导航。（True 表示连续导航）。返回随机采样的位置。</td>
+<td>{ "random_location": "X=0.00 Y=0.00 Z=0.00" }</td>
+<td>控制智能体随机游走。智能体在自身半径范围内随机选择一点进行导航。loop 参数控制是否连续导航（True 表示连续导航）。返回随机采样的位置。</td>
 </tr>
 <tr>
 <td>set_speed</td>
 <td>{speed}</td>
 <td></td>
-<td>设置智能体对象的最大速度</td>
+<td>设置智能体对象的最大速度。</td>
 </tr>
 <tr>
 <td>set_interval</td>
@@ -1627,7 +1627,7 @@
 <td>set_acc</td>
 <td>{acceleration}</td>
 <td></td>
-<td>设置智能体对象的最大加速度</td>
+<td>设置智能体对象的最大加速度。</td>
 </tr>
 <tr>
 <td>set_phy</td>
@@ -1639,7 +1639,7 @@
 <td>set_cam</td>
 <td>{x} {y} {z} {row} {pitch} {yaw}</td>
 <td></td>
-<td>设置相机相对于 actor 的位姿</td>
+<td>设置相机相对于 actor 的位姿。</td>
 </tr>
 <tr>
 <td>set_app</td>
@@ -1656,7 +1656,7 @@
 <tr>
 <td>generate_nav_goal</td>
 <td>{radius}</td>
-<td>{ ”nav_goal”: “X=0.00 Y=0.00 Z=0.00” }</td>
+<td>{ "nav_goal": "X=0.00 Y=0.00 Z=0.00" }</td>
 <td>在智能体半径范围内生成一个可达的目标位置，返回该位置。</td>
 </tr>
 <tr>
@@ -1668,20 +1668,20 @@
 <tr>
 <td>get_hit</td>
 <td></td>
-<td>{ ”hitresult”: “true(or false)” }</td>
+<td>{ "hitresult": "true(or false)" }</td>
 <td>获取智能体对象的碰撞标志（与其他目标或静态对象），返回 true 或 false。</td>
 </tr>
 <tr>
 <td>get_speed</td>
 <td></td>
-<td>{ ”speed”: “0.000” }</td>
-<td>获取智能体的线速度，返回该值</td>
+<td>{ "speed": "0.000" }</td>
+<td>获取智能体的线速度，返回该值。</td>
 </tr>
 <tr>
 <td>get_angle</td>
 <td></td>
-<td>{ ”angle”: “0.000” }</td>
-<td>获取智能体的角速度，返回该值</td>
+<td>{ "angle": "0.000" }</td>
+<td>获取智能体的角速度，返回该值。</td>
 </tr>
 <tr>
 <td>set_jump</td>
@@ -1699,13 +1699,13 @@
 <td>set_liedown</td>
 <td>{Direction_Frontback} {Direction_Rightleft}</td>
 <td></td>
-<td>智能体显示濒死倒下动画，倒下方向由两个参数控制：“Direction_Frontback”和“Direction_Rightleft”。例如，(100, 0) 表示向前倒下，而 (-100, 0) 表示向后倒下。</td>
+<td>智能体显示濒死倒下动画，倒下方向由两个参数控制：“Direction_Frontback”和“Direction_Rightleft”。例如，(100, 0) 表示向前倒下，(-100, 0) 表示向后倒下。</td>
 </tr>
 <tr>
 <td>set_standup</td>
 <td></td>
 <td></td>
-<td>智能体展示从濒死倒下状态过渡到站起的动画，站起方向会自动匹配之前的倒下方向。</td>
+<td>智能体展示从濒死倒下状态过渡到站起的动画，站起方向自动匹配之前的倒下方向。</td>
 </tr>
 <tr>
 <td>set_open_door</td>
