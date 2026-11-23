@@ -2,7 +2,7 @@
 
 # Overview
 
-UnrealZoo currently provides 100+ photo-realistic 3D scenes built on Unreal Engine 4.27 and 5.x, making it one of the largest and most diverse virtual environment collections for Embodied AI research. The environments range from compact indoor spaces to expansive outdoor landscapes covering up to 16 km².
+UnrealZoo currently provides 100+ photo-realistic 3D scenes built on Unreal Engine 4.27 and 5.x, making it one of the largest and most diverse virtual environment collections for Embodied AI research. The environments range from compact indoor spaces to expansive outdoor landscapes covering up to 16 km2.
 
 ### 🏷️ How to Use This Gallery
 

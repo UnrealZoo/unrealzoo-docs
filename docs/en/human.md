@@ -1,17 +1,17 @@
 # Human
 
 
-Class Name：BP_Character_C 
+Class Name: BP_Character_C 
 
 New added animation (lie down, climb, crouch, slide, etc)
 
-vbp {instance_name} {bp_function} {args 1} {args2}…
+vbp {instance_name} {bp_function} {args 1} {args2}...
 
 | BP_function | input  | output  | help |
 | --- | --- | --- | --- |
 | set_move | {angular} {velocity} |  | control the object for a single step with angle and linear velocity: |
-| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.) |
-| nav_random | {radius} {loop} | { ”random_location”:  “X=0.00 Y=0.00 Z=0.00” } | control agent randomly wandering around. Agent randomly selects a point within its own radius range for navigation. The loop parameter controls whether continuous navigation is performed.（True for continuous navigation). Return with the randomly sampled location. |
+| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.) |
+| nav_random | {radius} {loop} | { ”random_location”:  “X=0.00 Y=0.00 Z=0.00” } | control agent randomly wandering around. Agent randomly selects a point within its own radius range for navigation. The loop parameter controls whether continuous navigation is performed.(True for continuous navigation). Return with the randomly sampled location. |
 | set_speed | {speed} |  | set the max velocity of the agent object |
 | set_interval | {value} |  | set the interval of the time to simulate animation. value: 1 ~ 1000 |
 | set_acc | {acceleration} |  | set the max acceleration of the agent object |

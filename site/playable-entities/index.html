@@ -1604,7 +1604,7 @@
 <p><img alt="" src="../assets/19cf868d811c.png" /></p>
 <h1 id="apis">APIs:</h1>
 <p>We utilize the BluePrint Function in Unreal Engine to construct these APIs for controlling the agent. Developers could directly call them via UnrealCV in the built-in console or Python code, following the UnrealCV command system:</p>
-<div class="highlight"><pre><span></span><code><span class="n">vbp</span> <span class="p">[</span><span class="n">obj_name</span><span class="p">]</span> <span class="p">[</span><span class="n">func_name</span><span class="p">]</span> <span class="p">[</span><span class="n">arg1</span><span class="p">]</span> <span class="p">[</span><span class="n">arg2</span><span class="p">]</span> <span class="err">…</span>
+<div class="highlight"><pre><span></span><code><span class="n">vbp</span> <span class="p">[</span><span class="n">obj_name</span><span class="p">]</span> <span class="p">[</span><span class="n">func_name</span><span class="p">]</span> <span class="p">[</span><span class="n">arg1</span><span class="p">]</span> <span class="p">[</span><span class="n">arg2</span><span class="p">]</span> <span class="o">...</span>
 </code></pre></div>
 <p>obj_name is the name of the instance of the entity, such as bp_character_2</p>
 <p>func_name is the name of the blueprint function, such as nav_to_object</p>
@@ -1612,9 +1612,9 @@
 <blockquote>
 <p>💡The following linked pages detail the Blueprint APIs for each type of playable entity</p>
 </blockquote>
-<p>Class Name：BP_Character_C </p>
+<p>Class Name: BP_Character_C </p>
 <p>New added animation (lie down, climb, crouch, slide, etc)</p>
-<p>vbp {instance_name} {bp_function} {args 1} {args2}…</p>
+<p>vbp {instance_name} {bp_function} {args 1} {args2}...</p>
 <table>
 <thead>
 <tr>
@@ -1635,13 +1635,13 @@
 <td>nav_to_goal</td>
 <td>{x} {y} {z}</td>
 <td></td>
-<td>Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.)</td>
+<td>Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.)</td>
 </tr>
 <tr>
 <td>nav_random</td>
 <td>{radius} {loop}</td>
 <td>{ ”random_location”:  “X=0.00 Y=0.00 Z=0.00” }</td>
-<td>control agent randomly wandering around. Agent randomly selects a point within its own radius range for navigation. The loop parameter controls whether continuous navigation is performed.（True for continuous navigation). Return with the randomly sampled location.</td>
+<td>control agent randomly wandering around. Agent randomly selects a point within its own radius range for navigation. The loop parameter controls whether continuous navigation is performed.(True for continuous navigation). Return with the randomly sampled location.</td>
 </tr>
 <tr>
 <td>set_speed</td>
@@ -1774,7 +1774,7 @@
 <td>nav_to_goal</td>
 <td>{x} {y} {z}</td>
 <td></td>
-<td>Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.)</td>
+<td>Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.)</td>
 </tr>
 <tr>
 <td>nav_random</td>
@@ -1896,7 +1896,7 @@
 <td>nav_to_goal</td>
 <td>{x} {y} {z}</td>
 <td></td>
-<td>Assign the agent a navigation goal, and use Nav mesh to calculate the legal path and control the target moving to the goal. (The goal has to be reachable in the environment.)</td>
+<td>Assign the agent a navigation goal, and use Nav mesh to calculate the legal path and control the target moving to the goal. (The goal has to be reachable in the environment.)</td>
 </tr>
 <tr>
 <td></td>
@@ -1976,7 +1976,7 @@
 <td>nav_to_goal</td>
 <td>{x} {y} {z}</td>
 <td></td>
-<td>Assign the agent a navigation goal, and use Nav mesh to calculate the legal path and control the target moving to the goal. (The goal has to be reachable in the environment.)</td>
+<td>Assign the agent a navigation goal, and use Nav mesh to calculate the legal path and control the target moving to the goal. (The goal has to be reachable in the environment.)</td>
 </tr>
 <tr>
 <td>set_speed</td>
@@ -2025,7 +2025,7 @@
 <td>nav_to_goal</td>
 <td>{x} {y} {z}</td>
 <td></td>
-<td>Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.)</td>
+<td>Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.)</td>
 </tr>
 <tr>
 <td>nav_to_target</td>
@@ -2230,7 +2230,7 @@
 </table>
 <p>This interactive must be incorporated with a human character</p>
 <p>vbp {character name} set_pickup </p>
-<p>Class Name： BP_GrabMoveDrop_C </p>
+<p>Class Name: BP_GrabMoveDrop_C </p>
 <p>vbp {instance_name} {bp_function} {args1} {args2} ... </p>
 <table>
 <thead>
@@ -2245,7 +2245,7 @@
 <tr>
 <td>is_picked</td>
 <td></td>
-<td>{ “is_picked”：“0” }</td>
+<td>{ “is_picked”:“0” }</td>
 <td>return the object state, is picked or not (0/1)</td>
 </tr>
 <tr>
@@ -2284,7 +2284,7 @@
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="n">vbp</span> <span class="n">bp_character_2</span> <span class="n">set_liedown</span> <span class="mi">100</span> <span class="mi">0</span>
 <span class="n">vbp</span> <span class="n">bp_character_2</span> <span class="n">set_standup</span> 
-<span class="c1"># Simulate the actions of falling down， given the direction of falling, </span>
+<span class="c1"># Simulate the actions of falling down, given the direction of falling, </span>
 <span class="c1"># as well as the recovery animation.</span>
 </code></pre></div>
 <h3 id="3-control-movement-via-navigation-system">3. Control movement via navigation system</h3>

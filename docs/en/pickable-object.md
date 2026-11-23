@@ -5,7 +5,7 @@ This interactive must be incorporated with a human character
 vbp {character name} set_pickup 
 
 
-Class Name： BP_GrabMoveDrop_C 
+Class Name: BP_GrabMoveDrop_C 
 
 vbp {instance_name} {bp_function} {args1} {args2} ... 
 

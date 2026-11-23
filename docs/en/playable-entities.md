@@ -54,7 +54,7 @@ human character could use set_pickup to pick/drop the item, researchers could us
 We utilize the BluePrint Function in Unreal Engine to construct these APIs for controlling the agent. Developers could directly call them via UnrealCV in the built-in console or Python code, following the UnrealCV command system:
 
 ```python
-vbp [obj_name] [func_name] [arg1] [arg2] …
+vbp [obj_name] [func_name] [arg1] [arg2] ...
 ```
 
 obj_name is the name of the instance of the entity, such as bp_character_2
@@ -67,17 +67,17 @@ arg  is the input parameter for the blueprint function, such as the goal locatio
 > 💡The following linked pages detail the Blueprint APIs for each type of playable entity
 
 
-Class Name：BP_Character_C 
+Class Name: BP_Character_C 
 
 New added animation (lie down, climb, crouch, slide, etc)
 
-vbp {instance_name} {bp_function} {args 1} {args2}…
+vbp {instance_name} {bp_function} {args 1} {args2}...
 
 | BP_function | input  | output  | help |
 | --- | --- | --- | --- |
 | set_move | {angular} {velocity} |  | control the object for a single step with angle and linear velocity: |
-| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.) |
-| nav_random | {radius} {loop} | { ”random_location”:  “X=0.00 Y=0.00 Z=0.00” } | control agent randomly wandering around. Agent randomly selects a point within its own radius range for navigation. The loop parameter controls whether continuous navigation is performed.（True for continuous navigation). Return with the randomly sampled location. |
+| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.) |
+| nav_random | {radius} {loop} | { ”random_location”:  “X=0.00 Y=0.00 Z=0.00” } | control agent randomly wandering around. Agent randomly selects a point within its own radius range for navigation. The loop parameter controls whether continuous navigation is performed.(True for continuous navigation). Return with the randomly sampled location. |
 | set_speed | {speed} |  | set the max velocity of the agent object |
 | set_interval | {value} |  | set the interval of the time to simulate animation. value: 1 ~ 1000 |
 | set_acc | {acceleration} |  | set the max acceleration of the agent object |
@@ -106,7 +106,7 @@ Class Name: BP_animal_C
 | BP_function | input  | output  | help |
 | --- | --- | --- | --- |
 | set_move | {angular} {velocity} |  | control the object for a single step with angle and linear velocity: |
-| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.) |
+| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.) |
 | nav_random |  |  | control agent randomly wandering around |
 | set_speed | {speed} |  | set the max velocity of the agent object |
 | set_interval | {value} |  | set the interval of the time to simulate animation. value: 1 ~ 1000 |
@@ -134,7 +134,7 @@ Class Name: BP_BaseCar_C
 | --- | --- | --- | --- |
 | set_move | {angular} {velocity} |  | control the object for a single step with angle and linear velocity: |
 | set_stop |  |  | stop the car with handbrake |
-| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Nav mesh to calculate the legal path and control the target moving to the goal. (The goal has to be reachable in the environment.) |
+| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Nav mesh to calculate the legal path and control the target moving to the goal. (The goal has to be reachable in the environment.) |
 |  |  |  |  |
 | set_speed | {speed} |  | set the max velocity of the agent object |
 | set_interval | {value} |  | set the interval of the time to simulate animation. value: 1 ~ 1000 |
@@ -154,7 +154,7 @@ Class Name: MotorBikes_C
 | BP_function | input  | output  | help |
 | --- | --- | --- | --- |
 | set_move | {angular} {velocity} |  | control the object for a single step with angle and linear velocity: |
-| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Nav mesh to calculate the legal path and control the target moving to the goal. (The goal has to be reachable in the environment.) |
+| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Nav mesh to calculate the legal path and control the target moving to the goal. (The goal has to be reachable in the environment.) |
 | set_speed | {speed} |  | set the max velocity of the agent object |
 | set_interval | {value} |  | set the interval of the time to simulate animation. value: 1 ~ 1000 |
 | set_app  | {id} |  | set the appearance of the agent object, id: 0~8 |
@@ -169,7 +169,7 @@ Mobile Rbots share the same class with human characters (BP_character_C), develo
 | BP_function | input  | output  | help |
 | --- | --- | --- | --- |
 | set_move | {angular} {velocity} |  | control the object for a single step with angle and linear velocity: |
-| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.) |
+| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.) |
 | nav_to_target | {target_object} {distance} |  | Assign the current agent to a target_object, utilize Navmesh and AI controller to dynamically follow the target_object, stopping at a specified distance from it |
 | nav_random |  |  | control agent randomly wandering around |
 | set_speed | {speed} |  | set the max velocity of the agent object |
@@ -217,13 +217,13 @@ This interactive must be incorporated with a human character
 vbp {character name} set_pickup 
 
 
-Class Name： BP_GrabMoveDrop_C 
+Class Name: BP_GrabMoveDrop_C 
 
 vbp {instance_name} {bp_function} {args1} {args2} ... 
 
 | BP_function | input  | output  | help |
 | --- | --- | --- | --- |
-| is_picked |  | { “is_picked”：“0” } | return the object state, is picked or not (0/1) |
+| is_picked |  | { “is_picked”:“0” } | return the object state, is picked or not (0/1) |
 | set_app  | {id} |  | set the appearance of the agent object, id: 0~20 |
 
 
@@ -276,7 +276,7 @@ vbp bp_character_2 set_jump
 ```python
 vbp bp_character_2 set_liedown 100 0
 vbp bp_character_2 set_standup 
-# Simulate the actions of falling down， given the direction of falling, 
+# Simulate the actions of falling down, given the direction of falling, 
 # as well as the recovery animation.
 ```
 

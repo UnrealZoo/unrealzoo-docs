@@ -7,7 +7,7 @@ BP_functions with Navigation system
 
 | BP_function | input  | output  | help |
 | --- | --- | --- | --- |
-| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.) |
+| nav_to_goal | {x} {y} {z} |  | Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.) |
 | nav_to_target | {target_object} {distance} |  | Assign the current agent to a target_object, utilize Navmesh and AI controller to dynamically follow the target_object, stopping at a specified distance from it |
 | nav_random |  |  | control agent randomly wandering around |
 | generate_nav_goal |  | { ”nav_goal”: “X=0.00 Y=0.00 Z=0.00” } | generate a reachable goal location around the agent, return the location. |
@@ -15,7 +15,7 @@ BP_functions with Navigation system
 
 
 
-Example：
+Example:
 
 ![](assets/b97282fe1bda.png)
 

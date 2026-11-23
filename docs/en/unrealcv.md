@@ -13,7 +13,7 @@ UnrealCV+ can be used in two ways:
 # 📦 Install UnrealCV Client
 
 
-We recommend you use Anaconda to install and manage your Python environment. CV2 is used for image processing, like extracting object masks and bounding boxes. Matplotlib is used for visualization.
+We recommend you use Anaconda to install and manage your Python environment. CV2 is used for image processing, like extracting object masks and bounding boxes. Matplotlib is used for visualization.
 
 Run the command in terminal to install UnrealCV+ client: 
 
