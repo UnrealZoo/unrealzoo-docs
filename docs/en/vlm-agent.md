@@ -1,32 +1,54 @@
 # VLM Agent
 
-> This page corresponds to content still being drafted in Notion, supplemented from the UnrealZoo repository materials.
+Here we show the examplar sequneces of GPT-4o agent on real time, comparing with RL agent, to demonstrate the limitations of the current agents.
 
-UnrealZoo supports connecting vision-language model (VLM) agents to photo-realistic environments for embodied reasoning, task control, and evaluation.
+# Embodied Visual Tracking
 
-## Related Capabilities
+The agent is required to dynamically track the person in the image.
 
-- **EmbRACE-3K**: A 3,000+ task dataset for language-guided embodied reasoning, evaluating VLM agents in UnrealZoo's complex environments. [[Paper](https://arxiv.org/abs/2507.10548)] [[Homepage](https://mxllc.github.io/EmbRACE-3K/)]
-- **Runtime MCP (v3.1)**: Connect an MCP-compatible agent to a running UnrealZoo environment for scene inspection and task control.
-- **ROCKET-2**: Cross-view goal alignment and visuomotor policy simulation training. [[Paper](https://arxiv.org/abs/2503.02505)] [[Homepage](https://craftjarvis.github.io/ROCKET-2/)]
 
-## Related Research
+## RL Agent
 
-| Work | Description |
-|---|---|
-| VLM Can Be a Good Assistant (IROS 2025) | Enhancing embodied visual tracking with self-improving VLMs |
-| TrackVLA (CoRL 2025) | Embodied visual tracking in the wild with VLA models |
-| TrackVLA++ (ICRA 2026) | Unleashing reasoning and memory capabilities in VLA models |
+![                                     SuburbNeighborhood](assets/Offline_Suburb.gif)
 
-> 💡 Detailed VLM agent integration and evaluation workflows are to be added; refer to the papers above and the EmbRACE-3K benchmark.
+## GPT-4o Agent with Real-time Mode
 
-## Demo Videos
+The environment and target will keep running while the GPT is responding to the instructions. The agent easily loses the target from the view due to the latency of the response.
 
 <video controls width="640" src="assets/GPT_tracking_5.mp4"></video>
 
+## GPT-4o Agent with Step- wise Pause Mode
+
+The environment and target are paused while waiting for the GPT response. The agent could keep tracking the target for a while, however, such setting is unrealistic in real-world.
 
 <video controls width="640" src="assets/GPT_tracking_stepwise.mp4"></video>
 
+# Visual Navigation
+
+The agent is required to navigate to a set of wooden boxes in the environment, as illustrated in the following picture.
+
+![               Target object     ](assets/image.png)
+
+## RL Agent
+
+We have trained an end-to-end visual navigation model, enabling the agent to adapt to environmental structures through jumping, crouching, walking, and running, and to quickly reach the target location.
+
+![A success case by RL-based agent (1)](assets/output.gif)
+
+
+## GPT-4o Agent
+
+The GPT-4o receives the first-person observation and the target’s relative coordinates as observation. The agent can perform turn, jump, and moving actions to navigate to the destination over obstacles. 
 
 <video controls width="640" src="assets/gpt_navigation_2.mp4"></video>
+
+
+<video controls width="640" src="assets/gpt_nav_failure_2.mp4"></video>
+
+### Failure Case Analysis：
+
+![The key frame sequence led to failure. When the target is positioned to the front of the agent, the agent  predicts two continuous "Turn right" rather than "Turn left" to bypass the front wire fence, causing it to miss the entrance. This misstep ultimately results in the agent being blocked by the wire fence later in the sequence](assets/gpt_nav_failure_2.png)
+
+When we provide the relative direction to the target, GPT struggles with analyzing the environment effectively and, at critical moments, provides inappropriate suggestions. This can lead to suboptimal decision-making, especially in dynamic and complex scenarios. Accumulated errors will eventually lead to task failure. For example, in the video, the agent moved correctly at the beginning, but it predicted the wrong direction for bypassing the front obstacles(wire fence), missing the entrance to the target area. Later, when it encountered a wire fence, the accumulated error ultimately led to failure.
+
 
