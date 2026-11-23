@@ -1,0 +1,54 @@
+site_name: UnrealZoo Documentation
+site_description: UnrealZoo — Enriching Photo-realistic Virtual Worlds for Embodied AI
+site_url: https://unrealzoo.readthedocs.io/
+repo_url: https://github.com/UnrealZoo/unrealzoo-docs
+repo_name: UnrealZoo/unrealzoo-docs
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+plugins:
+  - search
+
+nav:
+  - Getting Started: getting-started.md
+  - Architecture:
+      - UnrealZoo Architecture: unrealzoo-architecture.md
+      - UnrealCV+: unrealcv.md
+      - Gym Interface: gym-interface.md
+      - Toolkits for Gym Envs: toolkits-for-gym-envs.md
+  - Playable Entities:
+      - Overview: playable-entities.md
+      - Human: human.md
+      - Animal: animal.md
+      - Drone: drone.md
+      - Drivable Vehicles: drivable-vehicles.md
+      - Mobile Robots: mobile-robots.md
+  - Systems:
+      - Navigation System: navigation-system.md
+      - Weather System: weather-system.md
+  - Scenes & Assets:
+      - Scene Gallery: scene-gallery.md
+      - Environment Naming Convention: environment-naming-convention.md
+      - Import Custom Assets: import-custom-assets.md
+      - Pickable Object: pickable-object.md
+  - Transfer & Tasks:
+      - Real-World Transferring: real-world-transferring.md
+      - Active Visual Tracking: active-visual-tracking.md
+      - Human Demonstration: human-demonstration.md
