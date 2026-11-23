@@ -1,0 +1,22 @@
+# 导航系统
+
+在我们的环境中，开发者主要有两种方式来控制智能体的移动。首先，他们可以使用 "set_move" 函数对智能体进行逐步控制，这种方式不依赖额外的插件，但需要开发者通过外部代码自主管理移动策略。其次，开发者可以利用 UE 引擎内置的导航网格构建导航系统，以实现智能体的自主移动。我们的环境集成了这两种控制方式。通过将 BP 函数调用进行逐步控制与导航系统控制相结合，我们可以有效地利用导航系统来控制次级智能体，同时对主控智能体采用逐步控制。这种组合方式具有诸多优势，例如在多智能体场景中提升环境帧率，以及对主控智能体实现更高精度的控制。
+
+
+带导航系统的 BP_functions
+
+| BP_function | input  | output  | help |
+| --- | --- | --- | --- |
+| nav_to_goal | {x} {y} {z} |  | 为智能体分配一个导航目标，利用 Navmesh 和 AI-controller 内置插件自动控制其移动，通过最短路径到达目标。（目标在环境中必须可达。） |
+| nav_to_target | {target_object} {distance} |  | 将当前智能体分配到一个 target_object，利用 Navmesh 和 AI controller 动态跟随 target_object，并在距其指定距离处停下 |
+| nav_random |  |  | 控制智能体随机游走 |
+| generate_nav_goal |  | { ”nav_goal”: “X=0.00 Y=0.00 Z=0.00” } | 在智能体周围生成一个可达的目标位置，并返回该位置。 |
+
+
+
+
+示例：
+
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/35d9cb65-73ac-4e18-b34f-003362578973/ae31b6bf-d409-4d56-8d69-d7c5c56111b3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XWMGBB42%2F20261123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261123T070606Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDWhLZUn3w%2FTh2CQrn%2Bt%2BbIVSjo7ohhe%2Bq87q8lSljV0AIgP%2FezSDRsjleFUXc355SkmxGP0CKBT9tyh6s4UocE8coq%2FwMIbhAAGgw2Mzc0MjMxODM4MDUiDLF%2FtxBfsHgaI59X4ircA2DE6ck7ADWDL38XgeKvCtMGyI3Cpuf1utNjEj2nZOaWGWS4hEreKYcKDKtzpPe%2F7Q%2FT4CQR5knxciBNHh%2FoRzLzXKIs0Jt%2B1M556jCfYlk3o1kmcMPKFM0DzfYd8mvAoW%2Fg0e6hIJ4%2FZVx%2B%2BgHck57gPKnimsdEaE991mlCIg5KC8BHLsYe9%2Bkq1Jdes4D%2BkLKuOHno2ZRBTKCYDZlwCXd1PLqPD2X7DEnA31LDZc%2BTK5C8eo3ujzO4wYGzKp9Lw37Ks1C%2FFqHuY5zQwcGYByGE1oawBz4A1DTVS4SkMnzsjNYN1z%2B9kLO25V2UmKJTukpbDNp0LngD7WRvVnRjf5adGLsD2peDYCKt%2BXEzr28vyA6Frsk73F%2Bp8T5FNI5yYNrd1Go9Vx7AZt3eJsDr%2BUZBXHKZ%2Fe%2B2piMFfIR04%2BHnATuvAEVXT%2Btd43CNKzRU4tqZuCmeTlt2oihVavtBysrBJfEpjsmhRFLtQUpH62Lp76nMYeEQLZzs0t6vLhKt5vkmXGFV2Gq8HlbL%2BEbbIrYGmMpxCOMPkKY8NTeDbQBBwhef3%2FQDQoRVYL%2BdaH05%2BNgvvWZg95J5qMduY%2FJ0uko03wA%2FZGIeFA%2B0hp612bNHW1d%2BwPHeMfyieFKnMLCUj9gGOqUBNNQGfJXqtSSgHOzeXxKcjOBUhPgdpANMsFQ7Q4YEtsHgKUQTsDRlgP6NVse4Sqc3kLNDpGAQOGYVPU4QQHJs3l0OMcNyPamo6PxC7qK80TFO%2FuMUuyWFHVnRjqp1JGi%2Bpm6q1e5Rqn8cFM2adoHwURRYsYr9xBeJqjqqf8qB1ICVldpsGxk08ZtQWfn%2FPVeuKa7oIvaR0RYV4oHzkVxNRz3IUar%2B&X-Amz-Signature=893e019351928b2a172185db5e338644c233019c2fd2a67ee769cd6cb741746f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+
+![地面被 Nav mesh 覆盖（绿色区域），我们进一步利用 navmesh modifier 将该区域分割成不同颜色（仅在道路清晰可见的场景中）：智能体将优先使用粉色区域执行行人导航任务，而蓝色区域将优先用于驾驶导航任务。](https://prod-files-secure.s3.us-west-2.amazonaws.com/35d9cb65-73ac-4e18-b34f-003362578973/b2b512de-b867-4bd4-9a99-bef3ca65a575/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XWMGBB42%2F20261123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261123T070606Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIQDWhLZUn3w%2FTh2CQrn%2Bt%2BbIVSjo7ohhe%2Bq87q8lSljV0AIgP%2FezSDRsjleFUXc355SkmxGP0CKBT9tyh6s4UocE8coq%2FwMIbhAAGgw2Mzc0MjMxODM4MDUiDLF%2FtxBfsHgaI59X4ircA2DE6ck7ADWDL38XgeKvCtMGyI3Cpuf1utNjEj2nZOaWGWS4hEreKYcKDKtzpPe%2F7Q%2FT4CQR5knxciBNHh%2FoRzLzXKIs0Jt%2B1M556jCfYlk3o1kmcMPKFM0DzfYd8mvAoW%2Fg0e6hIJ4%2FZVx%2B%2BgHck57gPKnimsdEaE991mlCIg5KC8BHLsYe9%2Bkq1Jdes4D%2BkLKuOHno2ZRBTKCYDZlwCXd1PLqPD2X7DEnA31LDZc%2BTK5C8eo3ujzO4wYGzKp9Lw37Ks1C%2FFqHuY5zQwcGYByGE1oawBz4A1DTVS4SkMnzsjNYN1z%2B9kLO25V2UmKJTukpbDNp0LngD7WRvVnRjf5adGLsD2peDYCKt%2BXEzr28vyA6Frsk73F%2Bp8T5FNI5yYNrd1Go9Vx7AZt3eJsDr%2BUZBXHKZ%2Fe%2B2piMFfIR04%2BHnATuvAEVXT%2Btd43CNKzRU4tqZuCmeTlt2oihVavtBysrBJfEpjsmhRFLtQUpH62Lp76nMYeEQLZzs0t6vLhKt5vkmXGFV2Gq8HlbL%2BEbbIrYGmMpxCOMPkKY8NTeDbQBBwhef3%2FQDQoRVYL%2BdaH05%2BNgvvWZg95J5qMduY%2FJ0uko03wA%2FZGIeFA%2B0hp612bNHW1d%2BwPHeMfyieFKnMLCUj9gGOqUBNNQGfJXqtSSgHOzeXxKcjOBUhPgdpANMsFQ7Q4YEtsHgKUQTsDRlgP6NVse4Sqc3kLNDpGAQOGYVPU4QQHJs3l0OMcNyPamo6PxC7qK80TFO%2FuMUuyWFHVnRjqp1JGi%2Bpm6q1e5Rqn8cFM2adoHwURRYsYr9xBeJqjqqf8qB1ICVldpsGxk08ZtQWfn%2FPVeuKa7oIvaR0RYV4oHzkVxNRz3IUar%2B&X-Amz-Signature=67a1c18097cdd682ff5ebce11ea41133fe2435f76dc456a3807db4eed401fb43&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)

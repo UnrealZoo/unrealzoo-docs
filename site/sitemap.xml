@@ -1,123 +1,423 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://unrealzoo.readthedocs.io/active-visual-tracking/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/animal/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/active-visual-tracking/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/active-visual-tracking/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/active-visual-tracking/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/applications/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/animal/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/animal/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/animal/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/changelog/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/applications/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/applications/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/applications/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/citation/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/changelog/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/changelog/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/drivable-vehicles/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/citation/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/citation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/citation/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/drone/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/drivable-vehicles/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/drivable-vehicles/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/drivable-vehicles/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/environment-list/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/drone/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/drone/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/drone/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/environment-naming-convention/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/environment-list/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/environment-list/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/environment-list/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/getting-started/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/environment-naming-convention/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/environment-naming-convention/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/environment-naming-convention/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/gym-interface/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/getting-started/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/getting-started/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/getting-started/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/human-demonstration/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/gym-interface/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/gym-interface/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/gym-interface/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/human/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/human-demonstration/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/human-demonstration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/human-demonstration/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/import-custom-assets/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/human/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/human/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/human/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/mobile-robots/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/import-custom-assets/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/import-custom-assets/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/import-custom-assets/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/navigation-system/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/mobile-robots/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/mobile-robots/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/mobile-robots/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/overview/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/navigation-system/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/navigation-system/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/navigation-system/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/performance-metrics/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/performance-metrics/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/performance-metrics/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/performance-metrics/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/pickable-object/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/pickable-object/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/pickable-object/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/pickable-object/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/playable-entities/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/playable-entities/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/playable-entities/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/playable-entities/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/real-world-transferring/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/real-world-transferring/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/real-world-transferring/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/real-world-transferring/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/scene-gallery/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/scene-gallery/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/scene-gallery/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/scene-gallery/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/toolkits-for-gym-envs/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/toolkits-for-gym-envs/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/toolkits-for-gym-envs/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/toolkits-for-gym-envs/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/unrealcv/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/unrealcv/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/unrealcv/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/unrealcv/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/unrealzoo-architecture/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/unrealzoo-architecture/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/unrealzoo-architecture/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/unrealzoo-architecture/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/user-guide/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/user-guide/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/user-guide/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/version-compatibility/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/version-compatibility/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/version-compatibility/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/version-compatibility/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/vlm-agent/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/vlm-agent/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/vlm-agent/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/vlm-agent/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/weather-system/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/weather-system/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/weather-system/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/weather-system/"/>
     </url>
     <url>
-         <loc>https://unrealzoo.readthedocs.io/whats-new/</loc>
-         <lastmod>2026-11-23</lastmod>
+        <loc>https://unrealzoo.readthedocs.io/whats-new/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/whats-new/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/whats-new/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/active-visual-tracking/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/active-visual-tracking/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/active-visual-tracking/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/animal/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/animal/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/animal/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/applications/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/applications/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/applications/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/changelog/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/changelog/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/citation/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/citation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/citation/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/drivable-vehicles/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/drivable-vehicles/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/drivable-vehicles/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/drone/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/drone/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/drone/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/environment-list/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/environment-list/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/environment-list/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/environment-naming-convention/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/environment-naming-convention/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/environment-naming-convention/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/getting-started/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/getting-started/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/getting-started/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/gym-interface/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/gym-interface/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/gym-interface/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/human-demonstration/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/human-demonstration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/human-demonstration/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/human/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/human/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/human/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/import-custom-assets/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/import-custom-assets/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/import-custom-assets/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/mobile-robots/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/mobile-robots/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/mobile-robots/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/navigation-system/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/navigation-system/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/navigation-system/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/performance-metrics/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/performance-metrics/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/performance-metrics/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/pickable-object/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/pickable-object/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/pickable-object/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/playable-entities/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/playable-entities/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/playable-entities/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/real-world-transferring/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/real-world-transferring/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/real-world-transferring/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/scene-gallery/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/scene-gallery/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/scene-gallery/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/toolkits-for-gym-envs/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/toolkits-for-gym-envs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/toolkits-for-gym-envs/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/unrealcv/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/unrealcv/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/unrealcv/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/unrealzoo-architecture/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/unrealzoo-architecture/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/unrealzoo-architecture/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/user-guide/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/user-guide/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/version-compatibility/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/version-compatibility/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/version-compatibility/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/vlm-agent/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/vlm-agent/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/vlm-agent/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/weather-system/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/weather-system/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/weather-system/"/>
+    </url>
+    <url>
+        <loc>https://unrealzoo.readthedocs.io/zh/whats-new/</loc>
+        <lastmod>2026-11-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://unrealzoo.readthedocs.io/zh/whats-new/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://unrealzoo.readthedocs.io/whats-new/"/>
     </url>
 </urlset>

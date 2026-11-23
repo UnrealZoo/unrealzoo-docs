@@ -6,7 +6,6 @@ repo_name: UnrealZoo/unrealzoo-docs
 
 theme:
   name: material
-  language: en
   palette:
     primary: indigo
     accent: indigo
@@ -25,10 +24,20 @@ markdown_extensions:
 
 plugins:
   - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 中文
+          build: true
 
 nav:
   - 入门 Getting Started:
-      - Overview: overview.md
+      - Overview: index.md
       - Getting Started: getting-started.md
       - What's New: whats-new.md
       - Version Compatibility: version-compatibility.md
