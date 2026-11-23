@@ -8,12 +8,40 @@
 
 The UE4 example contains 6 maps (<3GB):  
 
+:linux:[Linux]            :win:[Windows]          :mac:[macOS]
+
+![FlexibleRoom ](assets/f39ffd83-2ee4-4992-b286-a9975431eca1.png)
+
+![Greek Island](assets/Greek_island.png)
+
+![ContainerYard_Day](assets/Untitled_%285%29.png)
+
+![ContainerYard_Night](assets/Untitled_%284%29.png)
+
+![SuburbNeighborhood_Day](assets/Untitled_%286%29.png)
+
+![SuburbNeighborhood_Night](assets/Untitled_%287%29.png)
+
+
 
 The UE5 example contains 4 maps (~10GB): 
 
+:linux:[Linux]            :win:[Windows]          :mac:[macOS]
+
 > 📌 The global illumination and ray tracing are turned on by default.
 
+![ChemicalFactory](assets/image_%281%29.png)
+
+![Middle East](assets/b16b48de-6da8-4d42-8087-0d4116e10236.png)
+
+
+![Modular Old Town](assets/image.png)
+
+![Roof-City Pack](assets/ddf6cc23-f614-4b4d-9509-77d6d8e15bba.png)
+
 ### Full Version Binary Download (requires over 60GB of storage space)
+
+:linux:[Linux]            :win:[Windows]          :mac:[macOS]
 
 # Install UnrealCV+ Client
 
@@ -64,8 +92,6 @@ generate_env_config.py                   # generate environment config json file
 | ContainerYard_Night | Demo_Roof |
 | SuburbNeighborhood_Day |  |
 | SuburbNeighborhood_Night |  |
-
-
 
 ### 1. Run random agents
 

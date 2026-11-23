@@ -1,21 +1,51 @@
-# VLM 智能体
+# VLM Agent
 
-> 本页面对应 Notion 中尚在撰写的内容，现基于 UnrealZoo 仓库已有材料补充。
+此处展示 GPT-4o agent 在实时模式下的示例序列，并与 RL agent 进行对比，以说明当前 agent 的局限性。
 
-UnrealZoo 支持将视觉-语言模型（VLM）智能体接入高度逼真的环境，进行具身推理、任务控制与评测。
+# Embodied Visual Tracking
 
-## 相关能力
+agent 需要动态跟踪图像中的人物。
 
-- **EmbRACE-3K**：面向语言引导具身推理的 3,000+ 任务数据集，在 UnrealZoo 复杂环境中评测 VLM 智能体。[[Paper](https://arxiv.org/abs/2507.10548)] [[Homepage](https://mxllc.github.io/EmbRACE-3K/)]
-- **Runtime MCP（v3.1）**：将 MCP 兼容的智能体连接到运行中的 UnrealZoo 环境，用于场景检查与任务控制。
-- **ROCKET-2**：跨视角目标对齐与视觉运动策略的仿真训练。[[Paper](https://arxiv.org/abs/2503.02505)] [[Homepage](https://craftjarvis.github.io/ROCKET-2/)]
+## RL Agent
 
-## 相关研究
+![                                     郊区社区](assets/Offline_Suburb.gif)
 
-| 工作 | 说明 |
-|---|---|
-| VLM Can Be a Good Assistant（IROS 2025） | 用自我改进的 VLM 增强具身视觉追踪 |
-| TrackVLA（CoRL 2025） | 野外具身视觉追踪的 VLA 模型 |
-| TrackVLA++（ICRA 2026） | 释放 VLA 模型在具身视觉追踪中的推理与记忆能力 |
+## 实时模式下的 GPT-4o Agent
 
-> 💡 详细 VLM 智能体的接入与评测流程待补充，可参考上述论文与 EmbRACE-3K 基准。
+当 GPT 响应指令时，环境和目标将持续运行。由于响应延迟，agent 很容易从视野中丢失目标。
+
+<video controls width="640" src="assets/GPT_tracking_5.mp4"></video>
+
+## 逐步暂停模式下的 GPT-4o Agent
+
+在等待 GPT 响应时，环境和目标处于暂停状态。agent 可以在一段时间内持续跟踪目标，但此类设定在真实世界中并不现实。
+
+<video controls width="640" src="assets/GPT_tracking_stepwise.mp4"></video>
+
+# Visual Navigation
+
+agent 需要导航至环境中一组木箱处，如下图所示。
+
+![               目标物体     ](assets/image.png)
+
+## RL Agent
+
+我们训练了一个端到端视觉导航模型，使 agent 能够通过跳跃、蹲伏、行走和奔跑来适应环境结构，并快速到达目标位置。
+
+![RL agent 的成功案例 (1)](assets/output.gif)
+
+
+## GPT-4o Agent
+
+GPT-4o 接收第一人称观测和目标相对坐标作为输入。agent 可以执行转向、跳跃和移动动作，越过障碍物导航至目的地。
+
+<video controls width="640" src="assets/gpt_navigation_2.mp4"></video>
+
+
+<video controls width="640" src="assets/gpt_nav_failure_2.mp4"></video>
+
+### 失败案例分析：
+
+![导致失败的关键帧序列。当目标位于 agent 前方时，agent 预测了两次连续的"右转"而非"左转"来绕过前方铁丝网，导致其错过入口。这一失误最终导致 agent 在序列后续阶段被铁丝网阻挡](assets/gpt_nav_failure_2.png)
+
+当我们提供目标的相对方向时，GPT 难以有效分析环境，并在关键时刻给出不恰当的建议。这可能导致次优决策，尤其在动态复杂场景中。累积误差最终将导致任务失败。例如，在视频中，agent 起初移动正确，但预测了错误的绕行前方障碍物（铁丝网）的方向，错过了目标区域的入口。随后当其遇到铁丝网时，累积误差最终导致失败。

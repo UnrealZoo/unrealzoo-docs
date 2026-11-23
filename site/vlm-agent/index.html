@@ -1290,24 +1290,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    VLM Agent
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1324,58 +1306,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#related-capabilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Capabilities
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-research" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Research
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#demo-videos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Demo Videos
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1631,47 +1561,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#related-capabilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Capabilities
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-research" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Research
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#demo-videos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Demo Videos
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1691,48 +1580,34 @@
 
 
 <h1 id="vlm-agent">VLM Agent</h1>
-<blockquote>
-<p>This page corresponds to content still being drafted in Notion, supplemented from the UnrealZoo repository materials.</p>
-</blockquote>
-<p>UnrealZoo supports connecting vision-language model (VLM) agents to photo-realistic environments for embodied reasoning, task control, and evaluation.</p>
-<h2 id="related-capabilities">Related Capabilities</h2>
-<ul>
-<li><strong>EmbRACE-3K</strong>: A 3,000+ task dataset for language-guided embodied reasoning, evaluating VLM agents in UnrealZoo's complex environments. [<a href="https://arxiv.org/abs/2507.10548">Paper</a>] [<a href="https://mxllc.github.io/EmbRACE-3K/">Homepage</a>]</li>
-<li><strong>Runtime MCP (v3.1)</strong>: Connect an MCP-compatible agent to a running UnrealZoo environment for scene inspection and task control.</li>
-<li><strong>ROCKET-2</strong>: Cross-view goal alignment and visuomotor policy simulation training. [<a href="https://arxiv.org/abs/2503.02505">Paper</a>] [<a href="https://craftjarvis.github.io/ROCKET-2/">Homepage</a>]</li>
-</ul>
-<h2 id="related-research">Related Research</h2>
-<table>
-<thead>
-<tr>
-<th>Work</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>VLM Can Be a Good Assistant (IROS 2025)</td>
-<td>Enhancing embodied visual tracking with self-improving VLMs</td>
-</tr>
-<tr>
-<td>TrackVLA (CoRL 2025)</td>
-<td>Embodied visual tracking in the wild with VLA models</td>
-</tr>
-<tr>
-<td>TrackVLA++ (ICRA 2026)</td>
-<td>Unleashing reasoning and memory capabilities in VLA models</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>💡 Detailed VLM agent integration and evaluation workflows are to be added; refer to the papers above and the EmbRACE-3K benchmark.</p>
-</blockquote>
-<h2 id="demo-videos">Demo Videos</h2>
+<p>Here we show the examplar sequneces of GPT-4o agent on real time, comparing with RL agent, to demonstrate the limitations of the current agents.</p>
+<h1 id="embodied-visual-tracking">Embodied Visual Tracking</h1>
+<p>The agent is required to dynamically track the person in the image.</p>
+<h2 id="rl-agent">RL Agent</h2>
+<p><img alt="                                     SuburbNeighborhood" src="../assets/Offline_Suburb.gif" /></p>
+<h2 id="gpt-4o-agent-with-real-time-mode">GPT-4o Agent with Real-time Mode</h2>
+<p>The environment and target will keep running while the GPT is responding to the instructions. The agent easily loses the target from the view due to the latency of the response.</p>
 <video controls width="640" src="assets/GPT_tracking_5.mp4"></video>
 
+<h2 id="gpt-4o-agent-with-step-wise-pause-mode">GPT-4o Agent with Step- wise Pause Mode</h2>
+<p>The environment and target are paused while waiting for the GPT response. The agent could keep tracking the target for a while, however, such setting is unrealistic in real-world.</p>
 <video controls width="640" src="assets/GPT_tracking_stepwise.mp4"></video>
 
+<h1 id="visual-navigation">Visual Navigation</h1>
+<p>The agent is required to navigate to a set of wooden boxes in the environment, as illustrated in the following picture.</p>
+<p><img alt="               Target object     " src="../assets/image.png" /></p>
+<h2 id="rl-agent_1">RL Agent</h2>
+<p>We have trained an end-to-end visual navigation model, enabling the agent to adapt to environmental structures through jumping, crouching, walking, and running, and to quickly reach the target location.</p>
+<p><img alt="A success case by RL-based agent (1)" src="../assets/output.gif" /></p>
+<h2 id="gpt-4o-agent">GPT-4o Agent</h2>
+<p>The GPT-4o receives the first-person observation and the target’s relative coordinates as observation. The agent can perform turn, jump, and moving actions to navigate to the destination over obstacles. </p>
 <video controls width="640" src="assets/gpt_navigation_2.mp4"></video>
+
+<video controls width="640" src="assets/gpt_nav_failure_2.mp4"></video>
+
+<h3 id="failure-case-analysis">Failure Case Analysis：</h3>
+<p><img alt="The key frame sequence led to failure. When the target is positioned to the front of the agent, the agent  predicts two continuous &quot;Turn right&quot; rather than &quot;Turn left&quot; to bypass the front wire fence, causing it to miss the entrance. This misstep ultimately results in the agent being blocked by the wire fence later in the sequence" src="../assets/gpt_nav_failure_2.png" /></p>
+<p>When we provide the relative direction to the target, GPT struggles with analyzing the environment effectively and, at critical moments, provides inappropriate suggestions. This can lead to suboptimal decision-making, especially in dynamic and complex scenarios. Accumulated errors will eventually lead to task failure. For example, in the video, the agent moved correctly at the beginning, but it predicted the wrong direction for bypassing the front obstacles(wire fence), missing the entrance to the target area. Later, when it encountered a wire fence, the accumulated error ultimately led to failure.</p>
 
 
 

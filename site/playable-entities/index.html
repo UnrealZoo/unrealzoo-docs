@@ -1586,25 +1586,27 @@
 <h1 id="showcase-of-different-agents">Showcase of different agents</h1>
 <h2 id="human-character">Human Character 🚶🏻‍♂️🚶🏻‍♀️</h2>
 <p>A diverse range of mesh bodies for virtual characters are used to construct rich and highly realistic environments. These virtual characters can be employed to create dense crowds and simulate real urban scenes, and each character can be controlled and randomly change appearance through our API interfaces.</p>
-<p><img alt="" src="../assets/eefb161b4a18.png" /></p>
+<p><img alt="" src="../assets/8053ac76164eb85556855d05dacea84.png" /></p>
 <h2 id="animals">Animals 🐘 🐕 🐎 🐧 🐢 🐖 🐏 🐂</h2>
-<p><img alt="" src="../assets/98cef54a8bb4.png" /></p>
+<p><img alt="" src="../assets/bbf0fa8c2237b1140eb85a8bcd25fcb.png" /></p>
 <h2 id="vehicle">Vehicle 🏍️ 🚗</h2>
 <p>We also have developed various types of vehicles including cars and motorcycles. These can be utilized for additional tasks such as autonomous driving and simulating dynamic traffic scenes.</p>
-<p><img alt="" src="../assets/1885a7320ada.png" /></p>
+<h3 id="ue4">UE4</h3>
+<p><img alt="" src="../assets/e2b28bdef79dd1988b8a29621e91b8c.png" /></p>
+<h3 id="ue5">UE5</h3>
 <p>💡Please note that, in the latest UE5 version, to support more realistic chaos system, each vehicle has its own class name, set_app cannot change the appearance anymore. If you want to use another vehicle, please spawn a new instance vehicle.</p>
-<p><img alt="" src="../assets/c42009fbe629.png" /></p>
+<p><img alt="" src="../assets/image.png" /></p>
 <h2 id="drone">Drone 🛩️</h2>
 <p>The drone can be controlled like vehicles through our APIs. It can be used for multi-agent collaboration or anomaly detection tasks, etc.</p>
-<p><img alt="" src="../assets/9f3bde1ef95c.png" /></p>
+<p><img alt="" src="../assets/6bb42da16d76f3d2235b7176c6acb4a.png" /></p>
 <h2 id="mobile-robot">Mobile Robot 🤖</h2>
-<p><img alt="" src="../assets/ffb9dad9d572.png" /></p>
+<p><img alt="" src="../assets/Untitled.png" /></p>
 <h2 id="pickable-object">Pickable Object 🧸</h2>
 <p>human character could use set_pickup to pick/drop the item, researchers could use api to set them anywhere in the map and use set_app to change its appearance. </p>
-<p><img alt="" src="../assets/19cf868d811c.png" /></p>
+<p><img alt="" src="../assets/image.png" /></p>
 <h1 id="apis">APIs:</h1>
 <p>We utilize the BluePrint Function in Unreal Engine to construct these APIs for controlling the agent. Developers could directly call them via UnrealCV in the built-in console or Python code, following the UnrealCV command system:</p>
-<div class="highlight"><pre><span></span><code><span class="n">vbp</span> <span class="p">[</span><span class="n">obj_name</span><span class="p">]</span> <span class="p">[</span><span class="n">func_name</span><span class="p">]</span> <span class="p">[</span><span class="n">arg1</span><span class="p">]</span> <span class="p">[</span><span class="n">arg2</span><span class="p">]</span> <span class="o">...</span>
+<div class="highlight"><pre><span></span><code><span class="n">vbp</span> <span class="p">[</span><span class="n">obj_name</span><span class="p">]</span> <span class="p">[</span><span class="n">func_name</span><span class="p">]</span> <span class="p">[</span><span class="n">arg1</span><span class="p">]</span> <span class="p">[</span><span class="n">arg2</span><span class="p">]</span> <span class="err">…</span>
 </code></pre></div>
 <p>obj_name is the name of the instance of the entity, such as bp_character_2</p>
 <p>func_name is the name of the blueprint function, such as nav_to_object</p>
@@ -1612,147 +1614,9 @@
 <blockquote>
 <p>💡The following linked pages detail the Blueprint APIs for each type of playable entity</p>
 </blockquote>
-<p>Class Name: BP_Character_C </p>
+<p>Class Name：BP_Character_C </p>
 <p>New added animation (lie down, climb, crouch, slide, etc)</p>
-<p>vbp {instance_name} {bp_function} {args 1} {args2}...</p>
-<table>
-<thead>
-<tr>
-<th>BP_function</th>
-<th>input</th>
-<th>output</th>
-<th>help</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>set_move</td>
-<td>{angular} {velocity}</td>
-<td></td>
-<td>control the object for a single step with angle and linear velocity:</td>
-</tr>
-<tr>
-<td>nav_to_goal</td>
-<td>{x} {y} {z}</td>
-<td></td>
-<td>Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.)</td>
-</tr>
-<tr>
-<td>nav_random</td>
-<td>{radius} {loop}</td>
-<td>{ ”random_location”:  “X=0.00 Y=0.00 Z=0.00” }</td>
-<td>control agent randomly wandering around. Agent randomly selects a point within its own radius range for navigation. The loop parameter controls whether continuous navigation is performed.(True for continuous navigation). Return with the randomly sampled location.</td>
-</tr>
-<tr>
-<td>set_speed</td>
-<td>{speed}</td>
-<td></td>
-<td>set the max velocity of the agent object</td>
-</tr>
-<tr>
-<td>set_interval</td>
-<td>{value}</td>
-<td></td>
-<td>set the interval of the time to simulate animation. value: 1 ~ 1000</td>
-</tr>
-<tr>
-<td>set_acc</td>
-<td>{acceleration}</td>
-<td></td>
-<td>set the max acceleration of the agent object</td>
-</tr>
-<tr>
-<td>set_phy</td>
-<td>{value}</td>
-<td></td>
-<td>simulate physics, 0: turn off, 1 :turn on</td>
-</tr>
-<tr>
-<td>set_cam</td>
-<td>{x} {y} {z} {row} {pitch} {yaw}</td>
-<td></td>
-<td>set the camera pose relative to the actor</td>
-</tr>
-<tr>
-<td>set_app</td>
-<td>{id}</td>
-<td></td>
-<td>set the appearance of the agent object, id: 0~19</td>
-</tr>
-<tr>
-<td>set_viewport</td>
-<td></td>
-<td></td>
-<td>After executing this command, the Game window will display the agent's first-person perspective. Enter the command again to switch the window to display the free-roaming perspective.</td>
-</tr>
-<tr>
-<td>generate_nav_goal</td>
-<td>{radius}</td>
-<td>{ ”nav_goal”: “X=0.00 Y=0.00 Z=0.00” }</td>
-<td>generate a reachable goal location around the agent radius, return the location.</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>get_hit</td>
-<td></td>
-<td>{ ”hitresult”: “true(or false)” }</td>
-<td>get the hit flag(with other target or static object) of the agent object, return true or false.</td>
-</tr>
-<tr>
-<td>get_speed</td>
-<td></td>
-<td>{ ”speed”: “0.000” }</td>
-<td>get the agent’s linear velocity, return value</td>
-</tr>
-<tr>
-<td>get_angle</td>
-<td></td>
-<td>{ ”angle”: “0.000” }</td>
-<td>get the agent’s angular velocity, return value</td>
-</tr>
-<tr>
-<td>set_jump</td>
-<td></td>
-<td></td>
-<td>The agent displays a jumping animation, demonstrating a crossing motion when encountering obstacles that can be overcome.</td>
-</tr>
-<tr>
-<td>set_crouch</td>
-<td></td>
-<td></td>
-<td>The agent demonstrates a crouching animation, which, when paired with the set_move action, enables a crouching walking animation.</td>
-</tr>
-<tr>
-<td>set_liedown</td>
-<td>{Direction_Frontback} {Direction_Rightleft}</td>
-<td></td>
-<td>The agent displays a near-death falling animation, with the direction of the fall controlled by two parameters: "Direction_Frontback" and "Direction_Rightleft". For example, (100, 0) indicates falling forward, while (-100, 0) indicates falling backward.</td>
-</tr>
-<tr>
-<td>set_standup</td>
-<td></td>
-<td></td>
-<td>The agent demonstrates an animation transitioning from a near-death fallen state to standing up, with the direction of the stand-up automatically matching the previous fall direction.</td>
-</tr>
-<tr>
-<td>set_open_door</td>
-<td>{1/0}</td>
-<td></td>
-<td>The agent open/close the door.(1 for open, 0 for close)</td>
-</tr>
-<tr>
-<td>set_pickup</td>
-<td></td>
-<td></td>
-<td>The agent pick/drop a item.</td>
-</tr>
-</tbody>
-</table>
+<p>vbp {instance_name} {bp_function} {args 1} {args2}…</p>
 <p>Class Name: BP_animal_C</p>
 <table>
 <thead>
@@ -1774,7 +1638,7 @@
 <td>nav_to_goal</td>
 <td>{x} {y} {z}</td>
 <td></td>
-<td>Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.)</td>
+<td>Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.)</td>
 </tr>
 <tr>
 <td>nav_random</td>
@@ -1868,142 +1732,6 @@
 </tr>
 </tbody>
 </table>
-<h1 id="cars">🚗Cars</h1>
-<p>Class Name: BP_BaseCar_C</p>
-<table>
-<thead>
-<tr>
-<th>BP_function</th>
-<th>input</th>
-<th>output</th>
-<th>help</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>set_move</td>
-<td>{angular} {velocity}</td>
-<td></td>
-<td>control the object for a single step with angle and linear velocity:</td>
-</tr>
-<tr>
-<td>set_stop</td>
-<td></td>
-<td></td>
-<td>stop the car with handbrake</td>
-</tr>
-<tr>
-<td>nav_to_goal</td>
-<td>{x} {y} {z}</td>
-<td></td>
-<td>Assign the agent a navigation goal, and use Nav mesh to calculate the legal path and control the target moving to the goal. (The goal has to be reachable in the environment.)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>set_speed</td>
-<td>{speed}</td>
-<td></td>
-<td>set the max velocity of the agent object</td>
-</tr>
-<tr>
-<td>set_interval</td>
-<td>{value}</td>
-<td></td>
-<td>set the interval of the time to simulate animation. value: 1 ~ 1000</td>
-</tr>
-<tr>
-<td>set_acc</td>
-<td>{acceleration}</td>
-<td></td>
-<td>set the max acceleration of the agent object</td>
-</tr>
-<tr>
-<td>set_phy</td>
-<td>{value}</td>
-<td></td>
-<td>simulate physics, 0: turn off, 1 :turn on</td>
-</tr>
-<tr>
-<td>set_cam</td>
-<td>{x} {y} {z} {row} {pitch} {yaw}</td>
-<td></td>
-<td>set the camera pose relative to the actor</td>
-</tr>
-<tr>
-<td>set_app</td>
-<td>{id}</td>
-<td></td>
-<td>set the appearance of the agent object, id: 0~2</td>
-</tr>
-<tr>
-<td>set_viewport</td>
-<td></td>
-<td></td>
-<td>After executing this command, the Game window will display the agent's first-person perspective. Enter the command again to switch the window to display the free-roaming perspective.</td>
-</tr>
-<tr>
-<td>enter_exit_car</td>
-<td>{player index}</td>
-<td></td>
-<td>Human character interactions with cars involve standing near the car door. When the character stands close to the door and executes the corresponding command with the character index, it triggers animations for entering and exiting the car, which can be repeated by executing the command again</td>
-</tr>
-</tbody>
-</table>
-<h1 id="motorbikes">🏍️Motorbikes</h1>
-<p>Class Name: MotorBikes_C</p>
-<table>
-<thead>
-<tr>
-<th>BP_function</th>
-<th>input</th>
-<th>output</th>
-<th>help</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>set_move</td>
-<td>{angular} {velocity}</td>
-<td></td>
-<td>control the object for a single step with angle and linear velocity:</td>
-</tr>
-<tr>
-<td>nav_to_goal</td>
-<td>{x} {y} {z}</td>
-<td></td>
-<td>Assign the agent a navigation goal, and use Nav mesh to calculate the legal path and control the target moving to the goal. (The goal has to be reachable in the environment.)</td>
-</tr>
-<tr>
-<td>set_speed</td>
-<td>{speed}</td>
-<td></td>
-<td>set the max velocity of the agent object</td>
-</tr>
-<tr>
-<td>set_interval</td>
-<td>{value}</td>
-<td></td>
-<td>set the interval of the time to simulate animation. value: 1 ~ 1000</td>
-</tr>
-<tr>
-<td>set_app</td>
-<td>{id}</td>
-<td></td>
-<td>set the appearance of the agent object, id: 0~8</td>
-</tr>
-<tr>
-<td>set_viewport</td>
-<td></td>
-<td></td>
-<td>After executing this command, the Game window will display the agent's first-person perspective. Enter the command again to switch the window to display the free-roaming perspective.</td>
-</tr>
-</tbody>
-</table>
 <p>Mobile Rbots share the same class with human characters (BP_character_C), developers could directly use set_app to change the mesh into robotdog(id:20~33).</p>
 <table>
 <thead>
@@ -2025,7 +1753,7 @@
 <td>nav_to_goal</td>
 <td>{x} {y} {z}</td>
 <td></td>
-<td>Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.)</td>
+<td>Assign the agent a navigation goal, and use Navmesh and AI-controller built-in plugin to automatically control its movement to reach the goal via the shortest path. (The goal has to be reachable in the environment.)</td>
 </tr>
 <tr>
 <td>nav_to_target</td>
@@ -2230,7 +1958,7 @@
 </table>
 <p>This interactive must be incorporated with a human character</p>
 <p>vbp {character name} set_pickup </p>
-<p>Class Name: BP_GrabMoveDrop_C </p>
+<p>Class Name： BP_GrabMoveDrop_C </p>
 <p>vbp {instance_name} {bp_function} {args1} {args2} ... </p>
 <table>
 <thead>
@@ -2245,7 +1973,7 @@
 <tr>
 <td>is_picked</td>
 <td></td>
-<td>{ “is_picked”:“0” }</td>
+<td>{ “is_picked”：“0” }</td>
 <td>return the object state, is picked or not (0/1)</td>
 </tr>
 <tr>
@@ -2271,6 +1999,8 @@
 <span class="c1"># specifying the movement speed and direction through given angle and speed parameters. </span>
 <span class="c1"># The interval time for single-step execution can be customized and adjusted using &quot;set_interval&quot; </span>
 </code></pre></div>
+<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_10-29-14_set_move_2.mp4"></video>
+
 <h3 id="2-advanced-movement-control">2. Advanced movement control</h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># For further complex environment exploration task </span>
 
@@ -2278,20 +2008,28 @@
 <span class="n">vbp</span> <span class="n">bp_character_2</span> <span class="n">set_move</span> <span class="mi">0</span> <span class="mi">100</span>
 <span class="c1"># Set crouch and walk across some narrow obstacles</span>
 </code></pre></div>
+<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_11-12-05_set_crouch.mp4"></video>
+
 <div class="highlight"><pre><span></span><code><span class="n">vbp</span> <span class="n">bp_character_2</span> <span class="n">set_move</span> <span class="mi">45</span> <span class="mi">100</span>
 <span class="n">vbp</span> <span class="n">bp_character_2</span> <span class="n">set_jump</span> 
 <span class="c1"># while agent faces some low obstacles, the agent could jump and climb over the obstacles</span>
 </code></pre></div>
+<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_11-25-50_jump.mp4"></video>
+
 <div class="highlight"><pre><span></span><code><span class="n">vbp</span> <span class="n">bp_character_2</span> <span class="n">set_liedown</span> <span class="mi">100</span> <span class="mi">0</span>
 <span class="n">vbp</span> <span class="n">bp_character_2</span> <span class="n">set_standup</span> 
-<span class="c1"># Simulate the actions of falling down, given the direction of falling, </span>
+<span class="c1"># Simulate the actions of falling down， given the direction of falling, </span>
 <span class="c1"># as well as the recovery animation.</span>
 </code></pre></div>
+<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_10-35-27_liedown.mp4"></video>
+
 <h3 id="3-control-movement-via-navigation-system">3. Control movement via navigation system</h3>
 <div class="highlight"><pre><span></span><code><span class="n">vbp</span> <span class="n">bp_character_2</span> <span class="n">nav_to_object</span> <span class="n">bp_animal_2</span> <span class="mi">200</span>
 <span class="c1"># using navigation system control the bp_character move to a specific object (bp_animal_2),</span>
 <span class="c1"># and stop when reaching a radius range of 200 </span>
 </code></pre></div>
+<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-23_15-29-46_nav_to_object_natrue.mp4"></video>
+
 <div class="highlight"><pre><span></span><code><span class="n">vbp</span> <span class="n">Sport_2</span> <span class="n">set_viewport</span>
 <span class="n">vbp</span> <span class="n">bp_basecar_2</span> <span class="n">nav_to_goal</span> <span class="o">-</span><span class="mi">1620</span> <span class="o">-</span><span class="mi">3071</span> <span class="mi">487</span>
 <span class="n">vbp</span> <span class="n">Sport_2</span> <span class="n">set_viewport</span>
@@ -2299,6 +2037,8 @@
 <span class="c1"># Using navigation system control the motorbike agent navigates to a given location in the environment, following the shortest path</span>
 <span class="c1"># Display the free-roaming perspective </span>
 </code></pre></div>
+<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-23_18-13-10_motorbike_nav_to_goal.mp4"></video>
+
 <h3 id="4-pickdrop-up-an-object">4. Pick/Drop up an object</h3>
 <div class="highlight"><pre><span></span><code><span class="n">vbp</span> <span class="n">bp_character_2</span> <span class="n">set_pickup</span>
 <span class="c1"># Display the Third-person view of human agent.</span>
@@ -2306,6 +2046,8 @@
 <span class="c1">#&#39;set_pickup&#39; command or press keyboard &#39;E&#39; will trigger the object interaction animation. </span>
 <span class="c1"># call set_pickup again, the agent will drop the object. </span>
 </code></pre></div>
+<video controls width="640" src="assets/85ea109a40109f68a5b11bab3ec51734.mp4"></video>
+
 <h3 id="5-open-a-door">5. Open a door</h3>
 <div class="highlight"><pre><span></span><code><span class="n">vbp</span> <span class="n">bp_character_2</span> <span class="n">set_opendoor</span> <span class="mi">1</span> <span class="c1">#open door</span>
 <span class="n">vbp</span> <span class="n">bp_character_2</span> <span class="n">set_opendoor</span> <span class="mi">0</span> <span class="c1">#close door</span>
@@ -2314,12 +2056,7 @@
 <span class="c1"># When the human agent reached in the range of interactive door, </span>
 <span class="c1">#&#39;set_opendoor&#39; command or press keyboard &#39;E&#39; will trigger the door interaction animation. </span>
 </code></pre></div>
-<h2 id="demo-videos">Demo Videos</h2>
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_10-29-14_set_move_2.mp4"></video>
-
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_11-12-05_set_crouch.mp4"></video>
-
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_11-25-50_jump.mp4"></video>
+<video controls width="640" src="assets/Open_Door.mp4"></video>
 
 
 
