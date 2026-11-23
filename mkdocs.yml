@@ -47,7 +47,7 @@ plugins:
             UnrealCV+: UnrealCV+
             Gym Interface: Gym 接口
             Toolkits for Gym Envs: Gym 环境工具包
-            Playable Entities: 可玩实体
+            Playable Entities: 可操控对象
             Human: 人类
             Animal: 动物
             Drone: 无人机

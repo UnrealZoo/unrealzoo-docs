@@ -2,7 +2,7 @@
 
 ![UnrealZoo Overview](assets/overview.png)
 
-UnrealZoo 是基于 **Unreal Engine** 构建的高度逼真的 3D 虚拟世界集合，旨在反映开放世界的复杂性与多样性。它提供多种可用于具身智能的可玩实体（playable entities），包括人类角色、机器人、车辆和动物。
+UnrealZoo 是基于 **Unreal Engine** 构建的高度逼真的 3D 虚拟世界集合，旨在反映开放世界的复杂性与多样性。它提供多种可用于具身智能的可操控对象（playable entities），包括人类角色、机器人、车辆和动物。
 
 UnrealZoo 集成 [UnrealCV](https://unrealcv.org/)，提供一套易用的 Python API 和工具，支持多种潜在应用，如数据标注与采集、环境增强、分布式训练，以及智能体评测。
 
