@@ -64,9 +64,19 @@ unrealcv.client.disconnect()
 
 整体图像渲染速度提升最高达 120%。
 
+| UnrealCV | UnrealCV+ |
+|---|---|
+| ![UnrealCV](assets/ucvplus_color_old.gif) | ![UnrealCV+](assets/ucvplus_color_new.gif) |
+| ![UnrealCV](assets/ucvplus_color_old_labeled.gif) | ![UnrealCV+](assets/ucvplus_color_new_labeled.gif) |
+
 ### 多智能体交互速度（UnrealCV vs. UnrealCV+）
 
 提升多智能体场景下的 FPS 可有效增强基于视觉的多智能体模型的训练和推理。
+
+| 8 players + UnrealCV | 8 players + UnrealCV+ |
+|---|---|
+| ![8 players + UnrealCV](assets/ucvplus_multi_old.gif) | ![8 players + UnrealCV+](assets/ucvplus_multi_new.gif) |
+| ![8 players + UnrealCV](assets/ucvplus_multi_mask_old.gif) | ![8 players + UnrealCV+](assets/ucvplus_multi_mask_new.gif) |
 
 ---
 

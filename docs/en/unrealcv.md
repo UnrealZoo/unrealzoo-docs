@@ -65,9 +65,19 @@ unrealcv.client.disconnect()
 
 We enhanced the overall image rendering speed by up to 120%. 
 
+| UnrealCV | UnrealCV+ |
+|---|---|
+| ![UnrealCV](assets/ucvplus_color_old.gif) | ![UnrealCV+](assets/ucvplus_color_new.gif) |
+| ![UnrealCV](assets/ucvplus_color_old_labeled.gif) | ![UnrealCV+](assets/ucvplus_color_new_labeled.gif) |
+
 ## Multi-agent Interaction Speed (UnrealCV vs. UnrealCV+)
 
 Improving FPS in multi-agent settings can effectively enhance the training and inference of vision-based multi-agent models.
+
+| 8 players + UnrealCV | 8 players + UnrealCV+ |
+|---|---|
+| ![8 players + UnrealCV](assets/ucvplus_multi_old.gif) | ![8 players + UnrealCV+](assets/ucvplus_multi_new.gif) |
+| ![8 players + UnrealCV](assets/ucvplus_multi_mask_old.gif) | ![8 players + UnrealCV+](assets/ucvplus_multi_mask_new.gif) |
 
 ---
 
