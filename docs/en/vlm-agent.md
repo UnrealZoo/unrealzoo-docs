@@ -19,3 +19,14 @@ UnrealZoo supports connecting vision-language model (VLM) agents to photo-realis
 | TrackVLA++ (ICRA 2026) | Unleashing reasoning and memory capabilities in VLA models |
 
 > 💡 Detailed VLM agent integration and evaluation workflows are to be added; refer to the papers above and the EmbRACE-3K benchmark.
+
+## Demo Videos
+
+<video controls width="640" src="assets/GPT_tracking_5.mp4"></video>
+
+
+<video controls width="640" src="assets/GPT_tracking_stepwise.mp4"></video>
+
+
+<video controls width="640" src="assets/gpt_navigation_2.mp4"></video>
+
