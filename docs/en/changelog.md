@@ -367,20 +367,20 @@ cycle.
   `vset /action/game/level /Game/3dgs/custom_3dgs` demonstrates loading an
   external 3DGS level while retaining the UnrealZoo interfaces.
 
-- [`lidar_street_slam.gif`](figs/new_features/lidar_street_slam.gif): full
+- [`lidar_street_slam.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/lidar_street_slam.gif): full
   LiDAR street-mapping capture converted from MP4 for README use.
-- [`mujoco_go1_keyboard.gif`](figs/new_features/mujoco_go1_keyboard.gif): basic
+- [`mujoco_go1_keyboard.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/mujoco_go1_keyboard.gif): basic
   MuJoCo Go1 keyboard-control demonstration.
-- [`mujoco_go1_parkour_third_person.gif`](figs/new_features/mujoco_go1_parkour_third_person.gif):
+- [`mujoco_go1_parkour_third_person.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/mujoco_go1_parkour_third_person.gif):
   advanced parkour policy shown from a third-person view.
-- [`mujoco_go1_parkour_depth.gif`](figs/new_features/mujoco_go1_parkour_depth.gif):
+- [`mujoco_go1_parkour_depth.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/mujoco_go1_parkour_depth.gif):
   UnrealCV depth and the depth input used by the parkour policy.
-- [`drone_mesh_switch.gif`](figs/new_features/drone_mesh_switch.gif): runtime
+- [`drone_mesh_switch.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/drone_mesh_switch.gif): runtime
   mesh switching on a live drone without respawning the pawn.
-- [`3dgs_dynamic_load.gif`](figs/new_features/3dgs_dynamic_load.gif): an
+- [`3dgs_dynamic_load.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/3dgs_dynamic_load.gif): an
   external 3DGS environment loaded at runtime with an UnrealZoo-supported
   actor reused in the scene.
-- [`social_animation.gif`](figs/new_features/social_animation.gif): multiple
+- [`social_animation.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/social_animation.gif): multiple
   UnrealZoo characters playing runtime-selected social animations.
 
 Environment-specific usage questions and detailed behavior can be discussed in

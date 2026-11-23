@@ -17,12 +17,12 @@
 
 我们展示了一些由人类控制器采集的不同身体形态的示例视频。
 
-<video controls width="640" src="assets/human_humanDemonstration.mp4"></video>
+<video controls width="640" src="../../assets/human_humanDemonstration.mp4"></video>
 
-<video controls width="640" src="assets/Car_humanDemonstration.mp4"></video>
+<video controls width="640" src="../../assets/Car_humanDemonstration.mp4"></video>
 
-<video controls width="640" src="assets/Drone_humanDemonstration.mp4"></video>
+<video controls width="640" src="../../assets/Drone_humanDemonstration.mp4"></video>
 
-<video controls width="640" src="assets/MotorBike_humanDemonstration.mp4"></video>
+<video controls width="640" src="../../assets/MotorBike_humanDemonstration.mp4"></video>
 
-<video controls width="640" src="assets/Robot_humanDemonstration.mp4"></video>
+<video controls width="640" src="../../assets/Robot_humanDemonstration.mp4"></video>

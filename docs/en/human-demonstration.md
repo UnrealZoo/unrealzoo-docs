@@ -17,12 +17,12 @@ Game on!
 
 We show some exmplar videos with different bodies collected by human controller.
 
-<video controls width="640" src="assets/human_humanDemonstration.mp4"></video>
+<video controls width="640" src="../assets/human_humanDemonstration.mp4"></video>
 
-<video controls width="640" src="assets/Car_humanDemonstration.mp4"></video>
+<video controls width="640" src="../assets/Car_humanDemonstration.mp4"></video>
 
-<video controls width="640" src="assets/Drone_humanDemonstration.mp4"></video>
+<video controls width="640" src="../assets/Drone_humanDemonstration.mp4"></video>
 
-<video controls width="640" src="assets/MotorBike_humanDemonstration.mp4"></video>
+<video controls width="640" src="../assets/MotorBike_humanDemonstration.mp4"></video>
 
-<video controls width="640" src="assets/Robot_humanDemonstration.mp4"></video>
+<video controls width="640" src="../assets/Robot_humanDemonstration.mp4"></video>

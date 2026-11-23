@@ -188,7 +188,7 @@ vbp bp_character_2 set_move 20 100
 # 单步执行的间隔时间可通过 "set_interval" 自定义调整
 ```
 
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_10-29-14_set_move_2.mp4"></video>
+<video controls width="640" src="../../assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_10-29-14_set_move_2.mp4"></video>
 
 
 ### 2. 高级运动控制
@@ -201,7 +201,7 @@ vbp bp_character_2 set_move 0 100
 # 设置蹲伏并穿过一些狭窄障碍物
 ```
 
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_11-12-05_set_crouch.mp4"></video>
+<video controls width="640" src="../../assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_11-12-05_set_crouch.mp4"></video>
 
 ```python
 vbp bp_character_2 set_move 45 100
@@ -209,7 +209,7 @@ vbp bp_character_2 set_jump
 # 当智能体面对低矮障碍物时，可以跳跃并翻越障碍物
 ```
 
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_11-25-50_jump.mp4"></video>
+<video controls width="640" src="../../assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_11-25-50_jump.mp4"></video>
 
 ```python
 vbp bp_character_2 set_liedown 100 0
@@ -218,7 +218,7 @@ vbp bp_character_2 set_standup
 # 以及恢复动画。
 ```
 
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_10-35-27_liedown.mp4"></video>
+<video controls width="640" src="../../assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_10-35-27_liedown.mp4"></video>
 
 ### 3. 通过导航系统控制运动
 
@@ -228,7 +228,7 @@ vbp bp_character_2 nav_to_object bp_animal_2 200
 # 并在到达 200 的半径范围时停止
 ```
 
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-23_15-29-46_nav_to_object_natrue.mp4"></video>
+<video controls width="640" src="../../assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-23_15-29-46_nav_to_object_natrue.mp4"></video>
 
 ```python
 vbp Sport_2 set_viewport
@@ -239,7 +239,7 @@ vbp Sport_2 set_viewport
 # 显示自由漫游视角
 ```
 
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-23_18-13-10_motorbike_nav_to_goal.mp4"></video>
+<video controls width="640" src="../../assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-23_18-13-10_motorbike_nav_to_goal.mp4"></video>
 
 
 ### 4. 拾取/放下物体
@@ -253,7 +253,7 @@ vbp bp_character_2 set_pickup
 
 ```
 
-<video controls width="640" src="assets/85ea109a40109f68a5b11bab3ec51734.mp4"></video>
+<video controls width="640" src="../../assets/85ea109a40109f68a5b11bab3ec51734.mp4"></video>
 
 
 ### 5. 开门
@@ -267,4 +267,4 @@ vbp bp_character_2 set_opendoor 0 #关门
 # 'set_opendoor' 命令或按键盘 'E' 将触发门交互动画。
 ```
 
-<video controls width="640" src="assets/Open_Door.mp4"></video>
+<video controls width="640" src="../../assets/Open_Door.mp4"></video>

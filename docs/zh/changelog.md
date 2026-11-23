@@ -295,13 +295,13 @@ UnrealCV+ 标签意味着某项能力首先在 UnrealZoo 构建中开发和验�
 - 打包二进制命令
   `vset /action/game/level /Game/3dgs/custom_3dgs` 演示在保留 UnrealZoo 接口的同时加载外部 3DGS 关卡。
 
-- [`lidar_street_slam.gif`](figs/new_features/lidar_street_slam.gif)：完整的 LiDAR 街道建图采集，由 MP4 转换以供 README 使用。
-- [`mujoco_go1_keyboard.gif`](figs/new_features/mujoco_go1_keyboard.gif)：基础 MuJoCo Go1 键盘控制演示。
-- [`mujoco_go1_parkour_third_person.gif`](figs/new_features/mujoco_go1_parkour_third_person.gif)：从第三人称视角展示的高级跑酷策略。
-- [`mujoco_go1_parkour_depth.gif`](figs/new_features/mujoco_go1_parkour_depth.gif)：UnrealCV 深度图及跑酷策略使用的深度输入。
-- [`drone_mesh_switch.gif`](figs/new_features/drone_mesh_switch.gif)：在活动无人机上运行时切换网格而无需重新生成 pawn。
-- [`3dgs_dynamic_load.gif`](figs/new_features/3dgs_dynamic_load.gif)：在运行时加载外部 3DGS 环境，并在场景中复用 UnrealZoo 支持的 actor。
-- [`social_animation.gif`](figs/new_features/social_animation.gif)：多个 UnrealZoo 角色播放运行时选择的社交动画。
+- [`lidar_street_slam.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/lidar_street_slam.gif)：完整的 LiDAR 街道建图采集，由 MP4 转换以供 README 使用。
+- [`mujoco_go1_keyboard.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/mujoco_go1_keyboard.gif)：基础 MuJoCo Go1 键盘控制演示。
+- [`mujoco_go1_parkour_third_person.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/mujoco_go1_parkour_third_person.gif)：从第三人称视角展示的高级跑酷策略。
+- [`mujoco_go1_parkour_depth.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/mujoco_go1_parkour_depth.gif)：UnrealCV 深度图及跑酷策略使用的深度输入。
+- [`drone_mesh_switch.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/drone_mesh_switch.gif)：在活动无人机上运行时切换网格而无需重新生成 pawn。
+- [`3dgs_dynamic_load.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/3dgs_dynamic_load.gif)：在运行时加载外部 3DGS 环境，并在场景中复用 UnrealZoo 支持的 actor。
+- [`social_animation.gif`](https://github.com/UnrealZoo/unrealzoo-gym/blob/v3.1/doc/figs/new_features/social_animation.gif)：多个 UnrealZoo 角色播放运行时选择的社交动画。
 
 环境特定使用问题和详细行为可在 [GitHub Discussions](https://github.com/UnrealZoo/gym-unrealzoo/discussions) 中讨论。
 

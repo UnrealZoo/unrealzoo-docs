@@ -14,13 +14,13 @@ agent 需要动态跟踪图像中的人物。
 
 当 GPT 响应指令时，环境和目标将持续运行。由于响应延迟，agent 很容易从视野中丢失目标。
 
-<video controls width="640" src="assets/GPT_tracking_5.mp4"></video>
+<video controls width="640" src="../../assets/GPT_tracking_5.mp4"></video>
 
 ## 逐步暂停模式下的 GPT-4o Agent
 
 在等待 GPT 响应时，环境和目标处于暂停状态。agent 可以在一段时间内持续跟踪目标，但此类设定在真实世界中并不现实。
 
-<video controls width="640" src="assets/GPT_tracking_stepwise.mp4"></video>
+<video controls width="640" src="../../assets/GPT_tracking_stepwise.mp4"></video>
 
 # Visual Navigation
 
@@ -39,10 +39,10 @@ agent 需要导航至环境中一组木箱处，如下图所示。
 
 GPT-4o 接收第一人称观测和目标相对坐标作为输入。agent 可以执行转向、跳跃和移动动作，越过障碍物导航至目的地。
 
-<video controls width="640" src="assets/gpt_navigation_2.mp4"></video>
+<video controls width="640" src="../../assets/gpt_navigation_2.mp4"></video>
 
 
-<video controls width="640" src="assets/gpt_nav_failure_2.mp4"></video>
+<video controls width="640" src="../../assets/gpt_nav_failure_2.mp4"></video>
 
 ### 失败案例分析：
 

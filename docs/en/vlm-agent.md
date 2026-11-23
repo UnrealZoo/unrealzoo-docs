@@ -15,13 +15,13 @@ The agent is required to dynamically track the person in the image.
 
 The environment and target will keep running while the GPT is responding to the instructions. The agent easily loses the target from the view due to the latency of the response.
 
-<video controls width="640" src="assets/GPT_tracking_5.mp4"></video>
+<video controls width="640" src="../assets/GPT_tracking_5.mp4"></video>
 
 ## GPT-4o Agent with Step- wise Pause Mode
 
 The environment and target are paused while waiting for the GPT response. The agent could keep tracking the target for a while, however, such setting is unrealistic in real-world.
 
-<video controls width="640" src="assets/GPT_tracking_stepwise.mp4"></video>
+<video controls width="640" src="../assets/GPT_tracking_stepwise.mp4"></video>
 
 # Visual Navigation
 
@@ -40,10 +40,10 @@ We have trained an end-to-end visual navigation model, enabling the agent to ada
 
 The GPT-4o receives the first-person observation and the target’s relative coordinates as observation. The agent can perform turn, jump, and moving actions to navigate to the destination over obstacles. 
 
-<video controls width="640" src="assets/gpt_navigation_2.mp4"></video>
+<video controls width="640" src="../assets/gpt_navigation_2.mp4"></video>
 
 
-<video controls width="640" src="assets/gpt_nav_failure_2.mp4"></video>
+<video controls width="640" src="../assets/gpt_nav_failure_2.mp4"></video>
 
 ### Failure Case Analysis：
 

@@ -188,7 +188,7 @@ vbp bp_character_2 set_move 20 100
 # The interval time for single-step execution can be customized and adjusted using "set_interval" 
 ```
 
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_10-29-14_set_move_2.mp4"></video>
+<video controls width="640" src="../assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_10-29-14_set_move_2.mp4"></video>
 
 
 ### 2. Advanced movement control
@@ -201,7 +201,7 @@ vbp bp_character_2 set_move 0 100
 # Set crouch and walk across some narrow obstacles
 ```
 
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_11-12-05_set_crouch.mp4"></video>
+<video controls width="640" src="../assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_11-12-05_set_crouch.mp4"></video>
 
 ```python
 vbp bp_character_2 set_move 45 100
@@ -209,7 +209,7 @@ vbp bp_character_2 set_jump
 # while agent faces some low obstacles, the agent could jump and climb over the obstacles
 ```
 
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_11-25-50_jump.mp4"></video>
+<video controls width="640" src="../assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_11-25-50_jump.mp4"></video>
 
 ```python
 vbp bp_character_2 set_liedown 100 0
@@ -218,7 +218,7 @@ vbp bp_character_2 set_standup
 # as well as the recovery animation.
 ```
 
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_10-35-27_liedown.mp4"></video>
+<video controls width="640" src="../assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-22_10-35-27_liedown.mp4"></video>
 
 ### 3. Control movement via navigation system
 
@@ -228,7 +228,7 @@ vbp bp_character_2 nav_to_object bp_animal_2 200
 # and stop when reaching a radius range of 200 
 ```
 
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-23_15-29-46_nav_to_object_natrue.mp4"></video>
+<video controls width="640" src="../assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-23_15-29-46_nav_to_object_natrue.mp4"></video>
 
 ```python
 vbp Sport_2 set_viewport
@@ -239,7 +239,7 @@ vbp Sport_2 set_viewport
 # Display the free-roaming perspective 
 ```
 
-<video controls width="640" src="assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-23_18-13-10_motorbike_nav_to_goal.mp4"></video>
+<video controls width="640" src="../assets/Collection_-_%E8%99%9A%E5%B9%BB%E7%BC%96%E8%BE%91%E5%99%A8_2024-04-23_18-13-10_motorbike_nav_to_goal.mp4"></video>
 
 
 ### 4. Pick/Drop up an object
@@ -253,7 +253,7 @@ vbp bp_character_2 set_pickup
 
 ```
 
-<video controls width="640" src="assets/85ea109a40109f68a5b11bab3ec51734.mp4"></video>
+<video controls width="640" src="../assets/85ea109a40109f68a5b11bab3ec51734.mp4"></video>
 
 
 ### 5. Open a door
@@ -267,6 +267,6 @@ vbp bp_character_2 set_opendoor 0 #close door
 #'set_opendoor' command or press keyboard 'E' will trigger the door interaction animation. 
 ```
 
-<video controls width="640" src="assets/Open_Door.mp4"></video>
+<video controls width="640" src="../assets/Open_Door.mp4"></video>
 
 
