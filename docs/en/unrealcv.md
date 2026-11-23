@@ -152,7 +152,7 @@ api.unmount_pak(pak_path)
 
 Panoramic camera capture generates 360-degree equirectangular images from a point in your scene, useful for VR previews and virtual tours.
 
-![](assets/8cb5200263f5.png)
+![](assets/b6761932f19a.png)
 
 ### Usage
 
@@ -194,7 +194,7 @@ api.capture_panoramic(cam_id, 'C:/captures/panoramic.exr')
 
 The C++ video recording pipeline provides high-performance capture with configurable settings for large-scale generation workflows. Frame rate is dynamically controlled based on in-game time dilation.
 
-![](assets/4144e99ca803.png)
+![](assets/81d43ff3deef.png)
 
 ### Usage
 

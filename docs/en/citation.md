@@ -1,6 +1,6 @@
 # Citation
 
-如果 UnrealZoo 对你的研究有帮助，请引用我们的 ICCV 2025 论文：
+If UnrealZoo helps your research, please cite our ICCV 2025 paper:
 
 ```bibtex
 @inproceedings{zhong2025unrealzoo,
@@ -11,6 +11,4 @@
 }
 ```
 
-## License & Acknowledgments
-
-本项目遵循 MIT 许可证。第三方依赖及其许可证见仓库的 THIRD_PARTY_NOTICES 文件。
+---

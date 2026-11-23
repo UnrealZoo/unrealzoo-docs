@@ -1,14 +1,20 @@
 # Performance Metrics
 
-| 指标 | 值 | 说明 |
+| Metric | Value | Description |
 |------|------|------|
-| **场景规模** | 16 km² | 单场景最大面积 |
-| **场景数量** | 100+ | 预构建 photo-realistic 场景 |
-| **智能体数量** | 10+ | 同一场景内实时交互 |
-| **标准捕获吞吐** | 53.46 FPS @ 2K；29.59 FPS @ 4K | 相机捕获吞吐基准；最高 6.31× 加速 |
-| **序列化端到端采集** | 22.40 FPS @ 2K；16.25 FPS @ 4K | 完整序列化采集基准（非完整 Gym step 速率） |
-| **物理引擎** | Chaos | 当前 UE5.7 包的原生物理 |
-| **包大小** | ~70 GB | 推荐的 v3.1 UE5.7 完整包 |
-| **下载渠道** | ModelScope + Hugging Face | 主包镜像 |
+| **Scene Scale** | 16 km² | Maximum single scene area |
+| **Scene Count** | 100+ | Pre-built photo-realistic scenes |
+| **Agent Count** | 10+ | Real-time interaction in same scene |
+| **Standard Capture Throughput** | 53.46 FPS at 2K; 29.59 FPS at 4K | Camera-capture throughput benchmark; up to 6.31× speedup |
+| **Serialized End-to-End Acquisition** | 22.40 FPS at 2K; 16.25 FPS at 4K | Complete serialized acquisition benchmark; not the full Gym step rate |
+| **Physics Engine** | Chaos | Native physics in the current UE5.7 package |
+| **Package Size** | ~70 GB | Recommended v3.1 UE5.7 full package |
+| **Download Channels** | ModelScope + Hugging Face | Primary package mirrors |
 
-> 捕获吞吐与序列化端到端数值衡量观测工作流的不同部分，不应作为同一指标比较。实际 Gym step 性能还取决于场景、启用的模态、智能体数量与硬件。
+Capture-throughput and serialized end-to-end values measure different parts of
+the observation workflow and should not be compared as the same metric. Actual
+Gym step performance also depends on the scene, enabled modalities, agent count,
+and hardware. See the [v3.1 changelog](doc/CHANGELOG_v3.1.md) for the recorded
+benchmark scope.
+
+---

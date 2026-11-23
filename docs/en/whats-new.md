@@ -1,63 +1,86 @@
 # What's New
 
-> **UnrealZoo v3.1 在 v3.0 基础上扩展**：更快的视觉观测、3-D 感知、物理驱动机器人、运行时智能体定制，以及外部打包环境。
+> **UnrealZoo v3.1 expands the v3.0 foundation** with faster visual observation, 3-D perception, physics-driven robots, runtime agent customization, and externally packaged environments.
 
-> **现在三大平台二进制（Win/Linux/MacOS）均已发布！**
+> **Now, all three platform binaries (Win/Linux/MacOs) are released!**
 
-## v3.1 功能更新
+###  v3.1 Feature Updates
 
-| 功能 | 状态 | 说明 |
-|------|------|------|
-| **更快的 UnrealCV 捕获** | ✅ 增强 | 标准相机捕获吞吐达 **2K 下 53.46 FPS**、**4K 下 29.59 FPS**（最高 6.31×）；序列化端到端采集平均 **2K 下 22.40 FPS**、**4K 下 16.25 FPS** |
-| **LiDAR 观测** | ✅ 新增 | XYZI 点云观测，带玩家控制的街景建图示例 |
-| **占用体素观测** | ✅ 新增 | LINGO 兼容的布尔占用网格，支持边界与网格两种模式 |
-| **扩展全景观测** | ✅ 新增 | 扩展的全景模态，用于具身感知与数据集采集 |
-| **共享内存观测传输** | ✅ 新增 | 低延迟访问原始相机与占用观测 |
-| **运行时反射** | ✅ 新增 | 基于 JSON 的检查、属性访问与函数调用（针对支持的 Unreal 对象） |
-| **电影相机控制** | ✅ 新增 | 物理相机设置、手动对焦控制与派生内参 |
-| **MQRC 捕获** | ✅ 新增 | 高质量光照捕获，带显式渲染与后处理控制 |
-| **MuJoCo 机器人物理** | ✅ 新增 | Go1 运动与视觉 Parkour，以及预训练 Micro Duck 双足控制 |
-| **运行时无人机视觉定制** | ✅ 新增 | 在五个量产模型间切换（带动画螺旋桨）、使用模板外观，或加载兼容外部 Static Mesh（无需重生） |
-| **3D 无人机导航** | v3.1.4 | 目标导向飞行，带避障、平滑路径、自动朝向与碰撞包络更新 |
-| **社交动画** | ✅ 新增 | 运行时选择新打包的派对、日常与车内角色动画 |
-| **外部 3DGS 环境** | ✅ 新增 | 动态加载用户打包的 3DGS 资产，复用 UnrealZoo 智能体、相机与任务 API |
-| **Runtime MCP** | ✅ 新增 | 将 MCP 兼容智能体连接到运行中的 UnrealZoo 环境，用于场景检查与任务控制 |
+| Feature | Status | Description |
+|------|------|----------------------------------------|
+| **Faster UnrealCV Capture** |  Enhanced | Standard-camera **capture throughput** reaches **53.46 FPS at 2K** and **29.59 FPS at 4K** (up to 6.31×); **serialized end-to-end acquisition** averages **22.40 FPS at 2K** and **16.25 FPS at 4K** |
+| **LiDAR Observation** |  Added | XYZI point-cloud observations with a player-controlled street-mapping example |
+| **Occupancy Voxel Observation** |  Added | LINGO-compatible boolean occupancy grids with bounds- and mesh-based modes |
+| **Expanded Panorama Observation** |  Added | Extended panoramic modalities for embodied perception and dataset collection |
+| **[Shared-Memory Observation Transport](https://docs.unrealcv.org/en/latest/reference/unrealzoo_capture_transport.html)** |  Added | Lower-latency access to raw camera and occupancy observations |
+| **[Runtime Reflection](https://docs.unrealcv.org/en/latest/unrealcv_plus/reference/runtime-reflection.html)** |  Added | JSON-based inspection, property access, and function invocation for supported Unreal objects |
+| **[Cine Camera Controls](https://docs.unrealcv.org/en/latest/reference/cine_camera.html)** |  Added | Physical camera settings, manual focus control, and derived intrinsics |
+| **[MQRC Capture](https://docs.unrealcv.org/en/latest/unrealcv_plus/reference/mqrc-rendering.html)** |  Added | High-quality lit capture with explicit rendering and post-process controls |
+| **MuJoCo Robot Physics** |  Added | Go1 locomotion and vision-based Parkour, plus pretrained Micro Duck biped control |
+| **Runtime Drone Visual Customization** |  Added | Switch among five production-ready models with animated propellers, use a template appearance, or load a compatible external Static Mesh without respawning the drone |
+| **[3D Drone Navigation](example/new_features/README.md)** | v3.1.4 | Goal-directed flight with collision avoidance, smooth paths, automatic heading, and collision-envelope updates after resizing; **requires the updated v3.1.4 environment package containing this feature** |
+| **Social Animation** |  Added | Select newly packaged party, everyday, and in-car character animations at runtime |
+| **External 3DGS Environments** |  Added | Dynamically load user-packaged 3DGS assets and reuse UnrealZoo agents, cameras, and task APIs |
+| **Runtime MCP** |  Added | Connect an MCP-compatible agent to a running UnrealZoo environment for scene inspection and task control |
 
-## v3.0 核心更新
+ [v3.1 Changelog](doc/CHANGELOG_v3.1.md) ·  [v3.1 Feature Guide](example/new_features/README.md) ·  [UnrealCV+ Documentation](https://docs.unrealcv.org/en/latest/unrealcv_plus/index.html)
 
-| 功能 | 状态 | 说明 |
-|------|------|------|
-| **异构多智能体协同** | ✅ 发布 | 地面 + 无人机编队跟随（UE 内置导航 / Python 外部导航 API 示例） |
-| **模板化智能体生成** | ✅ 发布 | 运行时动态智能体生成，支持混合类别 |
-| **增强交互系统** | ✅ 发布 | 开门 / 车辆进出 / 拾取 / 蹲伏 / 跳跃 / 攀爬，带 API-键盘映射 |
-| **NavMesh 路径规划** | ✅ 发布 | 通过 API 计算最短路径航点，支持自主智能体导航控制与航点导出 |
-| **VLN 基线示例** | ✅ 新增 | 集成 Uni-NaVid、ViNT/NoMaD、StreamVLN，通过共享 `env.step()` 示例 |
+>  **Command reference:** The complete UnrealCV+ command list is available in the [Commands Reference](https://docs.unrealcv.org/en/latest/unrealcv_plus/reference/commands.html).
 
-## Development History
+** v3.0 Core Updates**
 
-### 2024-12：论文发布
-- 论文：[UnrealZoo: Enriching Photo-realistic Virtual Worlds for Embodied AI](https://arxiv.org/abs/2412.20977)
-- 网站：[unrealzoo.github.io](https://unrealzoo.github.io/)
+> **UnrealZoo v3.0 is released!** This is our biggest update yet, bringing complete heterogeneous multi-agent collaboration capabilities, out-of-the-box interaction systems, and a comprehensive upgrade to the UnrealCV+ Plugin.
 
-### 2025-01：UE5.6 完整环境包
-- 100+ 场景、67GB 完整包
-- Chaos 物理系统（车辆、碰撞、爆炸、火焰）
-- 物体交互系统（拾取/放下）
-- 外观切换系统（玩家/动物类别合并）
-- 跨平台二进制支持（Win/Mac/Linux 自动配置）
-- ModelScope 中国镜像（高速下载通道）
+| Feature | Status | Description |
+|------|------|----------------------------------------|
+| **Heterogeneous Multi-Agent Collaboration** |  Released | Ground + UAV formation following (UE built-in navigation / Python external navigation API examples) |
+| **Template-based Agent Spawn** |  Released | Runtime dynamic agent generation with mixed category support |
+| **Enhanced Interaction System** |  Released | Door open / vehicle enter-exit / pickup / crouch / jump / climb, with API-keyboard mapping for easy understanding |
+| **NavMesh Path Planning** |  Released | Calculate shortest path waypoints via API, support autonomous agent navigation control and waypoint export |
+| **VLN Baseline Examples** |  Added | Integrates Uni-NaVid, ViNT/NoMaD, and StreamVLN with UnrealZoo navigation via a shared `env.step()` example. See [VLN Baseline README](example/VLN_Baseline/README.md) |
 
-### 2026-04：v3.0 正式发布
-- 异构多智能体协同
-- 模板化智能体生成
-- 完整增强交互系统演示代码（API-键盘映射）
-- NavMesh 路径规划与任务应用演示代码
-- UnrealCV+ 插件全面升级
+###  Version & Package Compatibility
 
-### 2026：v3.1 功能更新
-- 更快的 UnrealCV 视觉观测与录制工作流
-- LiDAR 与占用体素观测
-- MuJoCo 机器人仿真示例（Go1 与 Micro Duck）
-- 用户打包 3DGS 环境支持
-- 运行时无人机视觉定制
-- 扩展角色社交动画
+| Code branch | Binary package | UE version | Status | Recommended use | Download |
+|---|---|---:|---|---|---|
+| **v3.1** | **Latest UE5.7 Full Package** | 5.7 | **Current / Recommended** | Latest perception, Go1, Runtime MCP, customization, and external 3DGS features | [ModelScope](https://modelscope.cn/datasets/UnrealZoo/UnrealZoo-UE5/files) · [Hugging Face](https://huggingface.co/datasets/UnrealZoo/UnrealZoo_UE5) |
+| **v3.0** | UE5.6 Full Package | 5.6 | Previous stable release | Multi-agent tasks and established v3.0 workflows | [ModelScope](https://modelscope.cn/datasets/UnrealZoo/UnrealZoo-UE5/tree/master/UnrealZoo_UE5_6_v3.0.0) |
+| **v2.0** | UE5 / UE4 Demo Package | UE5 / UE4 | Legacy | Compatibility with older tutorials and demo scenes | [UE5 package](https://modelscope.cn/datasets/UnrealZoo/UnrealZoo-UE5/files) · [UE4 package](https://modelscope.cn/datasets/UnrealZoo/UnrealZoo-UE4/files) |
+
+The recommended v3.1 UE5.7 package is approximately **70 GB**.
+
+###  Development History
+
+**Click to view historical updates**
+
+#### 2024-12: Paper Release
+-  Paper: [UnrealZoo: Enriching Photo-realistic Virtual Worlds for Embodied AI](https://arxiv.org/abs/2412.20977)
+-  Website: [unrealzoo.github.io](https://unrealzoo.github.io/)
+-  Notion Docs: [Scene Gallery](https://www.notion.so/Scene-Gallery-a801475ff98943159da66f641f4c38b2)
+
+#### 2025-01: UE5.6 Full Environment Package
+-  100+ scenes, 67GB full package
+-  Chaos physics system (vehicles, collisions, explosions, fire)
+-  Object interaction system (pickup/drop)
+-  Appearance switching system (player/animal categories merged)
+-  Cross-platform binary support (Win/Mac/Linux auto-configuration)
+-  ModelScope China mirror (high-speed download channel)
+
+#### 2026-04: v3.0 Official Release
+-  Heterogeneous multi-agent collaboration
+-  Template-based Agent Spawn
+-  Full enhanced interaction system demo code (API-keyboard mapping)
+-  NavMesh path planning and task application demo code
+-  UnrealCV+ Plugin comprehensive upgrade
+
+#### 2026: v3.1 Feature Update
+-  Faster UnrealCV visual observation and recording workflows
+-  LiDAR and occupancy voxel observations
+-  MuJoCo robot simulation examples for Go1 and Micro Duck
+-  User-packaged 3DGS environment support
+-  Runtime drone visual customization with animated built-in models and external Static Mesh support
+-  Expanded character social animations
+
+[View v3.1 Changelog](doc/CHANGELOG_v3.1.md)
+
+---
