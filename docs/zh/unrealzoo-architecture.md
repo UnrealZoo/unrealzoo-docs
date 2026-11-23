@@ -2,9 +2,9 @@
 
 UnrealZoo 的详细架构如下：
 
-- Unreal Engine Environments（二进制）包含场景和可交互实体。
+- Unreal Engine Environments（二进制）包含场景和可操控对象。
 - UnrealCV+ Server 作为插件构建在 UE 二进制中，包含渲染、数据捕获、对象/智能体控制以及命令解析等模块。服务器中的渲染管线和命令系统已优化。
 - UnrealCV+ Client 提供基于 Python 的工具函数，用于启动二进制、连接服务器以及与 UE 环境交互。采用 IPC socket 和批量命令优化性能。
 - OpenAI Gym Interface 提供智能体级别的接口，用于智能体-环境交互，已在社区中广泛使用。Gym 接口支持在配置文件中自定义任务，并包含工具包，提供一组用于环境增强、种群控制等的 gym wrapper。
 
-![UnrealZoo 的整体框架架构](https://prod-files-secure.s3.us-west-2.amazonaws.com/35d9cb65-73ac-4e18-b34f-003362578973/a11f0e44-8714-45b6-aecf-3e0787b4718b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466SL3YKIPK%2F20261123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261123T070430Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIAwIPpCkKQf93%2F00lBNu859h0GRlQ9spjX3RV6sbszm3AiEA4PEyN8x4dhBvaX53%2Fk6t%2F7S%2F00m8ega3fbmjxiRV8ncq%2FwMIbhAAGgw2Mzc0MjMxODM4MDUiDD5bi2kqJK71wGFdMyrcA12N%2FWnATjHlPGiSx7xuN7tEy0jFc72DED%2FQQJbNNWK341dRwIYnKbMLt1ZanQ%2F1s1QvbZTkgrscHvqFuYMBgUZyrh5UeDfNb8X%2BQZ%2Fwl%2Fksx4X4O87ogMUdqychbygGrYaeHRKRGOOc1OOZ13mQumVi1HVnMlQCTNX24n%2FQKPXs9pqifXv7mg%2BcKe2Twy%2FPPJuk4x3ELwmWPPsYYL1XJ4AFWv1jrxi%2FZ3QAGBZZ%2BKk3p3hB51UXNR2y6%2ByfFs%2BjfJ4OxQ18BANtCCwiQtXesfwljHy1pJHw1Z0eVH6KinkIjnac9pziF6%2BdoqyhElmGUYGa%2BlJSsdnFDp0my0HCpEc4nzUCjGye3LYi74OAmUwu36uNz3O87%2F9odNfemHVM6esNyGTwHkgZ1Hd88%2Bu7axTfAW%2FKmXe%2BHWQUMVUGbZ8J45Iub1wbt3DpVSDCjsmLkklT%2FVzZ6e3VJpmyr3Oy%2FxIp3RK5xSSFmlT0AnM%2FENJ%2BRn155eU%2Ftajm8UBgkXZudlm9hTZmENl3CeU5CJdGExKdYmEmH%2FF0FEFOv8tc6xMG6Rm%2F8ajq6SbulQhy0AsW3XTYtlOa06WFmTHcFp1MQPe9XCvrM9aemxKGxuDV3ptmKU2%2F1JpRRqEbIhjcML%2BVj9gGOqUByzRIgDSFlmftSlpiQBY%2FeHMZ11%2FU4se3lgK2C0h9d4n7VqmHvEjnwsw9hwgNEQh%2FBKXyiysYps8N52XJz1n6yEWpWcIpMjVxGLSrT56nV6h2PcQCPVExGs257AaMGeyPL%2FPe92kGLUbRra7FE5T1x92G5V7Ic1rUha1IMsmHCaXTBa8t9Wvu%2B5akbPzFhd4B4SdoQyTZ2jT58Zr53fdtdo04f4cy&X-Amz-Signature=e66f84e528b48830a0df54877842f9ae59350b349846c47a2548d4b12c7960fe&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+![UnrealZoo 的整体框架架构](assets/7af7ed0886c9.png)

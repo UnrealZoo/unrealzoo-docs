@@ -188,7 +188,7 @@ UnrealCV+ 标签意味着某项能力首先在 UnrealZoo 构建中开发和验�
   vget /camera/[camera_id]/lidar npy
   ```
 
-- 新增实时 `SuburbNeighborhood_Day` SLAM 风格示例，结合玩家 RGB 视图、当前传感器局部扫描、同步相机位姿以及累积的自顶向下体素地图。
+- 新增实时 `SuburbNeighborhood_Day` SLAM 风格示例，结合操控者 RGB 视图、当前传感器局部扫描、同步相机位姿以及累积的自顶向下体素地图。
 - 新增扫描诊断，用于检查预期射线网格布局、重复/顺序/范围异常、同步位姿跨度、静止一致性和地图重叠。
 
 #### 2. MuJoCo Go1 集成
@@ -230,7 +230,7 @@ UnrealCV+ 标签意味着某项能力首先在 UnrealZoo 构建中开发和验�
 
 - 新增发布工作流，用户可将自己的 3DGS 资产导入并 cook 到外部 PAK 中，而无需重建完整的 UnrealZoo 项目。
 - 新增引导式运行时工作流，用于从外部包中发现并激活兼容的 3DGS 内容。
-- 加载的 3DGS 环境仍是正常的 UnrealZoo 世界：现有玩家、无人机、相机、观测和任务逻辑可以在其上生成或复用。
+- 加载的 3DGS 环境仍是正常的 UnrealZoo 世界：现有操控者、无人机、相机、观测和任务逻辑可以在其上生成或复用。
 - 运行时加载使用已导入并 cook 的高斯泼溅资产；原始 PLY 导入是编辑器/cooking 步骤，而非环境 reset 操作。
 
 ### UnrealCV+ 用户可见改进
@@ -267,7 +267,7 @@ UnrealCV+ 标签意味着某项能力首先在 UnrealZoo 构建中开发和验�
 ## 变更
 
 - 新功能示例默认连接到已运行的 Unreal Editor/PIE 会话，而非静默启动第二个 Unreal 进程。
-- 街道建图示例默认使用生成的玩家相机，并将 Unreal 世界位置视为厘米，而 LiDAR XYZ 值为米。
+- 街道建图示例默认使用生成的操控者相机，并将 Unreal 世界位置视为厘米，而 LiDAR XYZ 值为米。
 - 修正了新可视化示例中的 RGB 颜色还原。
 - 动态内容示例区分文件系统 PAK 路径、Unreal 包路径和完整 Unreal 对象路径，而非将其视为可互换的字符串。
 
@@ -284,7 +284,7 @@ UnrealCV+ 标签意味着某项能力首先在 UnrealZoo 构建中开发和验�
 ## 示例与媒体
 
 - [`suburb_street_slam.py`](../example/new_features/suburb_street_slam.py)
-  演示玩家控制的 LiDAR 街道建图。
+  演示操控者控制的 LiDAR 街道建图。
 - [`lidar_visualization.py`](../example/new_features/lidar_visualization.py)
   可视化单个 LiDAR 观测和累积地图。
 - [`parkour/demo.py`](../example/mujoco/parkour/demo.py) 演示 Unreal 渲染场景中的 MuJoCo Go1 控制。
