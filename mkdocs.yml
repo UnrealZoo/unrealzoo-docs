@@ -11,7 +11,6 @@ theme:
     primary: indigo
     accent: indigo
   features:
-    - navigation.sections
     - navigation.top
     - search.suggest
     - search.highlight
@@ -28,37 +27,41 @@ plugins:
   - search
 
 nav:
-  - Overview: overview.md
-  - Getting Started: getting-started.md
-  - What's New: whats-new.md
-  - User Guide: user-guide.md
-  - Architecture:
+  - 入门 Getting Started:
+      - Overview: overview.md
+      - Getting Started: getting-started.md
+      - What's New: whats-new.md
+      - Version Compatibility: version-compatibility.md
+  - 使用指南 Guides:
+      - User Guide: user-guide.md
+  - 架构 Architecture:
       - UnrealZoo Architecture: unrealzoo-architecture.md
       - UnrealCV+: unrealcv.md
       - Gym Interface: gym-interface.md
       - Toolkits for Gym Envs: toolkits-for-gym-envs.md
-  - Playable Entities:
+  - 可玩实体 Playable Entities:
       - Overview: playable-entities.md
       - Human: human.md
       - Animal: animal.md
       - Drone: drone.md
       - Drivable Vehicles: drivable-vehicles.md
       - Mobile Robots: mobile-robots.md
-  - Systems:
+  - 系统 Systems:
       - Navigation System: navigation-system.md
       - Weather System: weather-system.md
-  - Scenes & Assets:
+  - 场景与资产 Scenes & Assets:
       - Scene Gallery: scene-gallery.md
       - Environment List: environment-list.md
       - Environment Naming Convention: environment-naming-convention.md
       - Import Custom Assets: import-custom-assets.md
       - Pickable Object: pickable-object.md
-  - Transfer & Tasks:
+  - 任务与迁移 Tasks & Transfer:
       - Real-World Transferring: real-world-transferring.md
       - VLM Agent: vlm-agent.md
       - Active Visual Tracking: active-visual-tracking.md
       - Human Demonstration: human-demonstration.md
-  - Performance Metrics: performance-metrics.md
-  - Applications: applications.md
-  - Changelog: changelog.md
-  - Citation: citation.md
+  - 参考 Reference:
+      - Performance Metrics: performance-metrics.md
+      - Applications: applications.md
+      - Changelog: changelog.md
+      - Citation: citation.md
