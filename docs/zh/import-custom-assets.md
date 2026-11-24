@@ -66,13 +66,13 @@ Right Click
            └── PrimaryAssetLabel
 ```
 
-![](assets/a36e2fa8b41d.png)
+![](assets/a36e2fa8b41d.jpg)
 
-![](assets/64a3c160678c.png)
+![](assets/64a3c160678c.jpg)
 
 创建一个新资产：
 
-![](assets/e30d0e562dda.png)
+![](assets/e30d0e562dda.jpg)
 
 配置该资产：
 
@@ -84,11 +84,11 @@ Right Click
 
 > 注意：ChunkId 应为任意大于 0 的唯一正整数，且在 UnrealZoo 内必须唯一。两个 PAK 文件必须分配不同的 ChunkId。Id 0 为保留值，不可使用。
 
-![](assets/ab157c882257.png)
+![](assets/ab157c882257.jpg)
 
 接下来，将所有需要打包进 PAK 文件的资产添加到该 Data Asset 的 Explicit Asset 和 Explicit Blueprint 字段中。关卡、网格体等常规 UAsset 资源放入 Explicit Asset，角色蓝图及类似蓝图资产则添加到 Explicit Blueprint。
 
-![](assets/1c7408e0e42c.png)
+![](assets/1c7408e0e42c.jpg)
 
 ---
 
@@ -102,7 +102,7 @@ Edit
       └── Packaging
 ```
 
-![](assets/0a95409e7073.png)
+![](assets/0a95409e7073.jpg)
 
 在 Project Settings 中打开 Packaging 面板。
 

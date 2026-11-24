@@ -26,47 +26,47 @@ Below are examples of the tracking agents' first-person views in four kinds of s
 
 Agents deal with frequent low-level obstacles and narrow pathways, testing their occlusion handling and precise movements.
 
-![Offline UndergroundParking](assets/avt_interior_1.gif)
+<video controls loop muted playsinline preload="none" title="Offline UndergroundParking" poster="../assets/avt_interior_1.jpg" src="../assets/avt_interior_1.mp4" style="max-width:100%;border-radius:6px"></video>
 
-![Offline Bunker](assets/avt_interior_2.gif)
+<video controls loop muted playsinline preload="none" title="Offline Bunker" poster="../assets/avt_interior_2.jpg" src="../assets/avt_interior_2.mp4" style="max-width:100%;border-radius:6px"></video>
 
-![LV Soul Cave](assets/avt_interior_3.gif)
+<video controls loop muted playsinline preload="none" title="LV Soul Cave" poster="../assets/avt_interior_3.jpg" src="../assets/avt_interior_3.mp4" style="max-width:100%;border-radius:6px"></video>
 
-![Offline Storagehouse](assets/avt_interior_4.gif)
+<video controls loop muted playsinline preload="none" title="Offline Storagehouse" poster="../assets/avt_interior_4.jpg" src="../assets/avt_interior_4.mp4" style="max-width:100%;border-radius:6px"></video>
 
 📌Palaces:
 
 Agents face multi-level structures and intricate designs, where mastering spatial awareness is essential.
 
-![Brass Gardens](assets/avt_palaces_1.gif)
+<video controls loop muted playsinline preload="none" title="Brass Gardens" poster="../assets/avt_palaces_1.jpg" src="../assets/avt_palaces_1.mp4" style="max-width:100%;border-radius:6px"></video>
 
-![Eastern Garden](assets/avt_palaces_2.gif)
+<video controls loop muted playsinline preload="none" title="Eastern Garden" poster="../assets/avt_palaces_2.jpg" src="../assets/avt_palaces_2.mp4" style="max-width:100%;border-radius:6px"></video>
 
-![Offline Western Garden](assets/avt_palaces_3.gif)
+<video controls loop muted playsinline preload="none" title="Offline Western Garden" poster="../assets/avt_palaces_3.jpg" src="../assets/avt_palaces_3.mp4" style="max-width:100%;border-radius:6px"></video>
 
-![Offline Modular SciFi Season](assets/avt_palaces_4.gif)
+<video controls loop muted playsinline preload="none" title="Offline Modular SciFi Season" poster="../assets/avt_palaces_4.jpg" src="../assets/avt_palaces_4.mp4" style="max-width:100%;border-radius:6px"></video>
 
 📌Wilds:
 
 Irregular terrains and changing light conditions simulate outdoor tracking under unpredictable conditions.
 
-![Output](assets/avt_wilds_1.gif)
+<video controls loop muted playsinline preload="none" title="Output" poster="../assets/avt_wilds_1.jpg" src="../assets/avt_wilds_1.mp4" style="max-width:100%;border-radius:6px"></video>
 
-![Offline Greek Island](assets/avt_wilds_2.gif)
+<video controls loop muted playsinline preload="none" title="Offline Greek Island" poster="../assets/avt_wilds_2.jpg" src="../assets/avt_wilds_2.mp4" style="max-width:100%;border-radius:6px"></video>
 
-![EF Gus](assets/avt_wilds_3.gif)
+<video controls loop muted playsinline preload="none" title="EF Gus" poster="../assets/avt_wilds_3.jpg" src="../assets/avt_wilds_3.mp4" style="max-width:100%;border-radius:6px"></video>
 
-![Offline SnowMap](assets/avt_wilds_4.gif)
+<video controls loop muted playsinline preload="none" title="Offline SnowMap" poster="../assets/avt_wilds_4.jpg" src="../assets/avt_wilds_4.mp4" style="max-width:100%;border-radius:6px"></video>
 
 📌Modern Scenes:
 
 These high-fidelity scenes represent real-world environments, such as Factories and parking lots, requiring agents to adapt to detailed and dense surroundings.
 
-![Offline Industrial Area](assets/avt_modern_1.gif)
+<video controls loop muted playsinline preload="none" title="Offline Industrial Area" poster="../assets/avt_modern_1.jpg" src="../assets/avt_modern_1.mp4" style="max-width:100%;border-radius:6px"></video>
 
-![Offline Downtown West](assets/avt_modern_2.gif)
+<video controls loop muted playsinline preload="none" title="Offline Downtown West" poster="../assets/avt_modern_2.jpg" src="../assets/avt_modern_2.mp4" style="max-width:100%;border-radius:6px"></video>
 
-![ContainerYard Day](assets/avt_modern_3.gif)
+<video controls loop muted playsinline preload="none" title="ContainerYard Day" poster="../assets/avt_modern_3.jpg" src="../assets/avt_modern_3.mp4" style="max-width:100%;border-radius:6px"></video>
 
-![Offline Suburb](assets/avt_modern_4.gif)
+<video controls loop muted playsinline preload="none" title="Offline Suburb" poster="../assets/avt_modern_4.jpg" src="../assets/avt_modern_4.mp4" style="max-width:100%;border-radius:6px"></video>
 

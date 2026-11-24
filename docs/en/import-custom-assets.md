@@ -71,13 +71,13 @@ Right Click
            └── PrimaryAssetLabel
 ```
 
-![](assets/a07824904c28.png)
+![](assets/a07824904c28.jpg)
 
-![](assets/cfb9c323a2fa.png)
+![](assets/cfb9c323a2fa.jpg)
 
 Create a new asset:
 
-![](assets/35ead8015161.png)
+![](assets/35ead8015161.jpg)
 
 Configure the asset:
 
@@ -91,12 +91,12 @@ Configure the asset:
 
 > Note:  ChunkId shall be any unique positive integer greater than 0 and must be unique within UnrealZoo. The two PAK files must be assigned distinct ChunkIds. Id 0 is reserved and unavailable for use. 
 
-![](assets/49fc7848c6e6.png)
+![](assets/49fc7848c6e6.jpg)
 
 
 Next, add all assets intended for packaging into the PAK file to the Explicit Asset and Explicit Blueprint fields of the Data Asset. Conventional UAsset resources such as levels and meshes go into Explicit Asset, while character blueprints and similar blueprint assets are added to Explicit Blueprint.
 
-![](assets/b933e803c772.png)
+![](assets/b933e803c772.jpg)
 
 ---
 
@@ -110,7 +110,7 @@ Edit
       └── Packaging
 ```
 
-![](assets/2aae2170c060.png)
+![](assets/2aae2170c060.jpg)
 
 Open the Packaging pannel in Project Sttings.
 
@@ -140,7 +140,7 @@ Open the Asset Manager pannel in Project Sttings.
 Disable:
 
 - PrimaryAssetLabel - Is Editor Only
-![](assets/dfef10e57443.png)
+![](assets/dfef10e57443.jpg)
 
 ---
 
@@ -154,22 +154,22 @@ Platforms
       └── Package Project
 ```
 
-![](assets/154619852d6b.png)
+![](assets/154619852d6b.jpg)
 
 
 Choose an output directory:
 
-![](assets/c92006ce3433.png)
+![](assets/c92006ce3433.jpg)
 
 
  Wait for packaging to complete:
 
-![](assets/2eb2729a3658.png)
+![](assets/2eb2729a3658.jpg)
 
 
 Unreal Editor will notify you when the packaging is completed:
 
-![](assets/fe3b3c781674.png)
+![](assets/fe3b3c781674.jpg)
 
 ---
 
@@ -187,7 +187,7 @@ OutputPath/
 
 Example output:
 
-![](assets/8418fdd89d5e.png)
+![](assets/8418fdd89d5e.jpg)
 
 # Step 2. Import into UnrealZoo
 

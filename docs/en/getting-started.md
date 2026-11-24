@@ -14,13 +14,13 @@ The UE4 example contains 6 maps (<3GB):
 
 ![Greek Island](assets/Greek_island.png)
 
-![ContainerYard_Day](assets/Untitled_%285%29.png)
+![![ContainerYard_Day](](assets/Untitled_(5).jpg)
 
-![ContainerYard_Night](assets/Untitled_%284%29.png)
+![![ContainerYard_Night](](assets/Untitled_(4).jpg)
 
-![SuburbNeighborhood_Day](assets/Untitled_%286%29.png)
+![![SuburbNeighborhood_Day](](assets/Untitled_(6).jpg)
 
-![SuburbNeighborhood_Night](assets/Untitled_%287%29.png)
+![![SuburbNeighborhood_Night](](assets/Untitled_(7).jpg)
 
 
 
@@ -30,7 +30,7 @@ The UE5 example contains 4 maps (~10GB):
 
 > 📌 The global illumination and ray tracing are turned on by default.
 
-![ChemicalFactory](assets/image_%281%29.png)
+![![ChemicalFactory](](assets/image_(1).png)
 
 ![Middle East](assets/b16b48de-6da8-4d42-8087-0d4116e10236.png)
 

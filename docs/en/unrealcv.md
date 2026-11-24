@@ -67,8 +67,8 @@ We enhanced the overall image rendering speed by up to 120%.
 
 | UnrealCV | UnrealCV+ |
 |---|---|
-| ![UnrealCV](assets/ucvplus_color_old.gif) | ![UnrealCV+](assets/ucvplus_color_new.gif) |
-| ![UnrealCV](assets/ucvplus_color_old_labeled.gif) | ![UnrealCV+](assets/ucvplus_color_new_labeled.gif) |
+| <video controls loop muted playsinline preload="none" title="UnrealCV" poster="../assets/ucvplus_color_old.jpg" src="../assets/ucvplus_color_old.mp4" style="max-width:100%;border-radius:6px"></video> | <video controls loop muted playsinline preload="none" title="UnrealCV+" poster="../assets/ucvplus_color_new.jpg" src="../assets/ucvplus_color_new.mp4" style="max-width:100%;border-radius:6px"></video> |
+| <video controls loop muted playsinline preload="none" title="UnrealCV" poster="../assets/ucvplus_color_old_labeled.jpg" src="../assets/ucvplus_color_old_labeled.mp4" style="max-width:100%;border-radius:6px"></video> | <video controls loop muted playsinline preload="none" title="UnrealCV+" poster="../assets/ucvplus_color_new_labeled.jpg" src="../assets/ucvplus_color_new_labeled.mp4" style="max-width:100%;border-radius:6px"></video> |
 
 ## Multi-agent Interaction Speed (UnrealCV vs. UnrealCV+)
 
@@ -76,8 +76,8 @@ Improving FPS in multi-agent settings can effectively enhance the training and i
 
 | 8 players + UnrealCV | 8 players + UnrealCV+ |
 |---|---|
-| ![8 players + UnrealCV](assets/ucvplus_multi_old.gif) | ![8 players + UnrealCV+](assets/ucvplus_multi_new.gif) |
-| ![8 players + UnrealCV](assets/ucvplus_multi_mask_old.gif) | ![8 players + UnrealCV+](assets/ucvplus_multi_mask_new.gif) |
+| <video controls loop muted playsinline preload="none" title="8 players + UnrealCV" poster="../assets/ucvplus_multi_old.jpg" src="../assets/ucvplus_multi_old.mp4" style="max-width:100%;border-radius:6px"></video> | <video controls loop muted playsinline preload="none" title="8 players + UnrealCV+" poster="../assets/ucvplus_multi_new.jpg" src="../assets/ucvplus_multi_new.mp4" style="max-width:100%;border-radius:6px"></video> |
+| <video controls loop muted playsinline preload="none" title="8 players + UnrealCV" poster="../assets/ucvplus_multi_mask_old.jpg" src="../assets/ucvplus_multi_mask_old.mp4" style="max-width:100%;border-radius:6px"></video> | <video controls loop muted playsinline preload="none" title="8 players + UnrealCV+" poster="../assets/ucvplus_multi_mask_new.jpg" src="../assets/ucvplus_multi_mask_new.mp4" style="max-width:100%;border-radius:6px"></video> |
 
 ---
 
@@ -162,7 +162,7 @@ api.unmount_pak(pak_path)
 
 Panoramic camera capture generates 360-degree equirectangular images from a point in your scene, useful for VR previews and virtual tours.
 
-![](assets/b6761932f19a.png)
+![](assets/b6761932f19a.jpg)
 
 ### Usage
 
@@ -204,7 +204,7 @@ api.capture_panoramic(cam_id, 'C:/captures/panoramic.exr')
 
 The C++ video recording pipeline provides high-performance capture with configurable settings for large-scale generation workflows. Frame rate is dynamically controlled based on in-game time dilation.
 
-![](assets/81d43ff3deef.png)
+![](assets/81d43ff3deef.jpg)
 
 ### Usage
 
