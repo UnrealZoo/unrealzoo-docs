@@ -26,46 +26,46 @@ UnrealZoo 提供了大量照片级真实、丰富多样的环境，作为具身 
 
 Agent 需要应对频繁的低矮障碍物和狭窄通道，考验其遮挡处理能力和精确运动能力。
 
-<video controls loop muted playsinline preload="auto" title="Offline UndergroundParking" poster="../../assets/avt_interior_1.jpg" src="../../assets/avt_interior_1.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Offline UndergroundParking" poster="../../assets/avt_interior_1.jpg" src="../../assets/avt_interior_1.mp4" style="max-width:100%;border-radius:6px"></video>
 
-<video controls loop muted playsinline preload="auto" title="Offline Bunker" poster="../../assets/avt_interior_2.jpg" src="../../assets/avt_interior_2.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Offline Bunker" poster="../../assets/avt_interior_2.jpg" src="../../assets/avt_interior_2.mp4" style="max-width:100%;border-radius:6px"></video>
 
-<video controls loop muted playsinline preload="auto" title="LV Soul Cave" poster="../../assets/avt_interior_3.jpg" src="../../assets/avt_interior_3.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="LV Soul Cave" poster="../../assets/avt_interior_3.jpg" src="../../assets/avt_interior_3.mp4" style="max-width:100%;border-radius:6px"></video>
 
-<video controls loop muted playsinline preload="auto" title="Offline Storagehouse" poster="../../assets/avt_interior_4.jpg" src="../../assets/avt_interior_4.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Offline Storagehouse" poster="../../assets/avt_interior_4.jpg" src="../../assets/avt_interior_4.mp4" style="max-width:100%;border-radius:6px"></video>
 
 📌宫殿场景：
 
 Agent 面对多层结构和复杂设计，掌握空间感知能力至关重要。
 
-<video controls loop muted playsinline preload="auto" title="Brass Gardens" poster="../../assets/avt_palaces_1.jpg" src="../../assets/avt_palaces_1.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Brass Gardens" poster="../../assets/avt_palaces_1.jpg" src="../../assets/avt_palaces_1.mp4" style="max-width:100%;border-radius:6px"></video>
 
-<video controls loop muted playsinline preload="auto" title="Eastern Garden" poster="../../assets/avt_palaces_2.jpg" src="../../assets/avt_palaces_2.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Eastern Garden" poster="../../assets/avt_palaces_2.jpg" src="../../assets/avt_palaces_2.mp4" style="max-width:100%;border-radius:6px"></video>
 
-<video controls loop muted playsinline preload="auto" title="Offline Western Garden" poster="../../assets/avt_palaces_3.jpg" src="../../assets/avt_palaces_3.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Offline Western Garden" poster="../../assets/avt_palaces_3.jpg" src="../../assets/avt_palaces_3.mp4" style="max-width:100%;border-radius:6px"></video>
 
-<video controls loop muted playsinline preload="auto" title="Offline Modular SciFi Season" poster="../../assets/avt_palaces_4.jpg" src="../../assets/avt_palaces_4.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Offline Modular SciFi Season" poster="../../assets/avt_palaces_4.jpg" src="../../assets/avt_palaces_4.mp4" style="max-width:100%;border-radius:6px"></video>
 
 📌野外场景：
 
 不规则地形和变化的光照条件模拟了不可预测条件下的户外跟踪。
 
-<video controls loop muted playsinline preload="auto" title="Output" poster="../../assets/avt_wilds_1.jpg" src="../../assets/avt_wilds_1.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Output" poster="../../assets/avt_wilds_1.jpg" src="../../assets/avt_wilds_1.mp4" style="max-width:100%;border-radius:6px"></video>
 
-<video controls loop muted playsinline preload="auto" title="Offline Greek Island" poster="../../assets/avt_wilds_2.jpg" src="../../assets/avt_wilds_2.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Offline Greek Island" poster="../../assets/avt_wilds_2.jpg" src="../../assets/avt_wilds_2.mp4" style="max-width:100%;border-radius:6px"></video>
 
-<video controls loop muted playsinline preload="auto" title="EF Gus" poster="../../assets/avt_wilds_3.jpg" src="../../assets/avt_wilds_3.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="EF Gus" poster="../../assets/avt_wilds_3.jpg" src="../../assets/avt_wilds_3.mp4" style="max-width:100%;border-radius:6px"></video>
 
-<video controls loop muted playsinline preload="auto" title="Offline SnowMap" poster="../../assets/avt_wilds_4.jpg" src="../../assets/avt_wilds_4.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Offline SnowMap" poster="../../assets/avt_wilds_4.jpg" src="../../assets/avt_wilds_4.mp4" style="max-width:100%;border-radius:6px"></video>
 
 📌现代场景：
 
 这些高保真场景代表真实世界环境，如工厂和停车场，要求 agent 适应细节丰富且密集的周围环境。
 
-<video controls loop muted playsinline preload="auto" title="Offline Industrial Area" poster="../../assets/avt_modern_1.jpg" src="../../assets/avt_modern_1.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Offline Industrial Area" poster="../../assets/avt_modern_1.jpg" src="../../assets/avt_modern_1.mp4" style="max-width:100%;border-radius:6px"></video>
 
-<video controls loop muted playsinline preload="auto" title="Offline Downtown West" poster="../../assets/avt_modern_2.jpg" src="../../assets/avt_modern_2.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Offline Downtown West" poster="../../assets/avt_modern_2.jpg" src="../../assets/avt_modern_2.mp4" style="max-width:100%;border-radius:6px"></video>
 
-<video controls loop muted playsinline preload="auto" title="ContainerYard Day" poster="../../assets/avt_modern_3.jpg" src="../../assets/avt_modern_3.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="ContainerYard Day" poster="../../assets/avt_modern_3.jpg" src="../../assets/avt_modern_3.mp4" style="max-width:100%;border-radius:6px"></video>
 
-<video controls loop muted playsinline preload="auto" title="Offline Suburb" poster="../../assets/avt_modern_4.jpg" src="../../assets/avt_modern_4.mp4" style="max-width:100%;border-radius:6px"></video>
+<video controls loop muted playsinline preload="none" title="Offline Suburb" poster="../../assets/avt_modern_4.jpg" src="../../assets/avt_modern_4.mp4" style="max-width:100%;border-radius:6px"></video>

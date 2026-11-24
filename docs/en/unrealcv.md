@@ -67,8 +67,8 @@ We enhanced the overall image rendering speed by up to 120%.
 
 | UnrealCV | UnrealCV+ |
 |---|---|
-| <video controls loop muted playsinline preload="auto" title="UnrealCV" poster="../assets/ucvplus_color_old.jpg" src="../assets/ucvplus_color_old.mp4" style="max-width:100%;border-radius:6px"></video> | <video controls loop muted playsinline preload="auto" title="UnrealCV+" poster="../assets/ucvplus_color_new.jpg" src="../assets/ucvplus_color_new.mp4" style="max-width:100%;border-radius:6px"></video> |
-| <video controls loop muted playsinline preload="auto" title="UnrealCV" poster="../assets/ucvplus_color_old_labeled.jpg" src="../assets/ucvplus_color_old_labeled.mp4" style="max-width:100%;border-radius:6px"></video> | <video controls loop muted playsinline preload="auto" title="UnrealCV+" poster="../assets/ucvplus_color_new_labeled.jpg" src="../assets/ucvplus_color_new_labeled.mp4" style="max-width:100%;border-radius:6px"></video> |
+| <video controls loop muted playsinline preload="none" title="UnrealCV" poster="../assets/ucvplus_color_old.jpg" src="../assets/ucvplus_color_old.mp4" style="max-width:100%;border-radius:6px"></video> | <video controls loop muted playsinline preload="none" title="UnrealCV+" poster="../assets/ucvplus_color_new.jpg" src="../assets/ucvplus_color_new.mp4" style="max-width:100%;border-radius:6px"></video> |
+| <video controls loop muted playsinline preload="none" title="UnrealCV" poster="../assets/ucvplus_color_old_labeled.jpg" src="../assets/ucvplus_color_old_labeled.mp4" style="max-width:100%;border-radius:6px"></video> | <video controls loop muted playsinline preload="none" title="UnrealCV+" poster="../assets/ucvplus_color_new_labeled.jpg" src="../assets/ucvplus_color_new_labeled.mp4" style="max-width:100%;border-radius:6px"></video> |
 
 ## Multi-agent Interaction Speed (UnrealCV vs. UnrealCV+)
 
@@ -76,8 +76,8 @@ Improving FPS in multi-agent settings can effectively enhance the training and i
 
 | 8 players + UnrealCV | 8 players + UnrealCV+ |
 |---|---|
-| <video controls loop muted playsinline preload="auto" title="8 players + UnrealCV" poster="../assets/ucvplus_multi_old.jpg" src="../assets/ucvplus_multi_old.mp4" style="max-width:100%;border-radius:6px"></video> | <video controls loop muted playsinline preload="auto" title="8 players + UnrealCV+" poster="../assets/ucvplus_multi_new.jpg" src="../assets/ucvplus_multi_new.mp4" style="max-width:100%;border-radius:6px"></video> |
-| <video controls loop muted playsinline preload="auto" title="8 players + UnrealCV" poster="../assets/ucvplus_multi_mask_old.jpg" src="../assets/ucvplus_multi_mask_old.mp4" style="max-width:100%;border-radius:6px"></video> | <video controls loop muted playsinline preload="auto" title="8 players + UnrealCV+" poster="../assets/ucvplus_multi_mask_new.jpg" src="../assets/ucvplus_multi_mask_new.mp4" style="max-width:100%;border-radius:6px"></video> |
+| <video controls loop muted playsinline preload="none" title="8 players + UnrealCV" poster="../assets/ucvplus_multi_old.jpg" src="../assets/ucvplus_multi_old.mp4" style="max-width:100%;border-radius:6px"></video> | <video controls loop muted playsinline preload="none" title="8 players + UnrealCV+" poster="../assets/ucvplus_multi_new.jpg" src="../assets/ucvplus_multi_new.mp4" style="max-width:100%;border-radius:6px"></video> |
+| <video controls loop muted playsinline preload="none" title="8 players + UnrealCV" poster="../assets/ucvplus_multi_mask_old.jpg" src="../assets/ucvplus_multi_mask_old.mp4" style="max-width:100%;border-radius:6px"></video> | <video controls loop muted playsinline preload="none" title="8 players + UnrealCV+" poster="../assets/ucvplus_multi_mask_new.jpg" src="../assets/ucvplus_multi_mask_new.mp4" style="max-width:100%;border-radius:6px"></video> |
 
 ---
 
