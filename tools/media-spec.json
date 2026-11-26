@@ -1,0 +1,79 @@
+{
+  "_comment": "UnrealZoo 文档媒体清单：page_id + Notion 文件名 + 文档内资源名。fetch_media.py 按此清单从 Notion 取新鲜签名 URL 下载、逐帧校验、必要时转码。",
+  "pages": [
+    {
+      "page_id": "cc313d20-7969-47b6-82f9-fd3fad029cf1",
+      "title": "Human Demonstration",
+      "media": [
+        {"name": "human_humanDemonstration.mp4", "kind": "video"},
+        {"name": "Car_humanDemonstration.mp4", "kind": "video"},
+        {"name": "Drone_humanDemonstration.mp4", "kind": "video"},
+        {"name": "MotorBike_humanDemonstration.mp4", "kind": "video"},
+        {"name": "Robot_humanDemonstration.mp4", "kind": "video"}
+      ]
+    },
+    {
+      "page_id": "6e42ff72-5573-45ee-a1e1-15e2398a609a",
+      "title": "Playable Entities",
+      "media": [
+        {"name": "85ea109a40109f68a5b11bab3ec51734.mp4", "kind": "video"},
+        {"name": "Open_Door.mp4", "kind": "video"},
+        {"name": "Collection_-_虚幻编辑器_2024-04-22_10-29-14_set_move_2.mp4", "kind": "video"},
+        {"name": "Collection_-_虚幻编辑器_2024-04-22_10-35-27_liedown.mp4", "kind": "video"},
+        {"name": "Collection_-_虚幻编辑器_2024-04-22_11-12-05_set_crouch.mp4", "kind": "video"},
+        {"name": "Collection_-_虚幻编辑器_2024-04-22_11-25-50_jump.mp4", "kind": "video"},
+        {"name": "Collection_-_虚幻编辑器_2024-04-23_15-29-46_nav_to_object_natrue.mp4", "kind": "video"},
+        {"name": "Collection_-_虚幻编辑器_2024-04-23_18-13-10_motorbike_nav_to_goal.mp4", "kind": "video"}
+      ]
+    },
+    {
+      "page_id": "500525d1-2657-4174-bbe7-1fe8ded49fac",
+      "title": "VLM Agent",
+      "media": [
+        {"name": "GPT_tracking_5.mp4", "kind": "video"},
+        {"name": "GPT_tracking_stepwise.mp4", "kind": "video"},
+        {"name": "gpt_navigation_2.mp4", "kind": "video"},
+        {"name": "gpt_nav_failure_2.mp4", "kind": "video"},
+        {"name": "Offline_Suburb.gif", "kind": "image", "out": "Offline_Suburb.mp4", "encode": "gif2mp4"},
+        {"name": "output.gif", "kind": "image", "out": "output.mp4", "encode": "gif2mp4"},
+        {"name": "output_1.gif", "kind": "image", "out": "output_1.mp4", "encode": "gif2mp4"}
+      ]
+    },
+    {
+      "page_id": "7df1c9d9-fc7c-4ea6-8f4b-62720c4f6945",
+      "title": "Active Visual Tracking",
+      "media": [
+        {"name": "Offline_UndergroundParking.gif", "kind": "image", "out": "avt_interior_1.mp4", "encode": "gif2mp4"},
+        {"name": "Offline_bunker.gif", "kind": "image", "out": "avt_interior_2.mp4", "encode": "gif2mp4"},
+        {"name": "LV_Soul_Cave.gif", "kind": "image", "out": "avt_interior_3.mp4", "encode": "gif2mp4"},
+        {"name": "Offline_Storagehouse.gif", "kind": "image", "out": "avt_interior_4.mp4", "encode": "gif2mp4"},
+        {"name": "Brass_Gardens_output2.gif", "kind": "image", "out": "avt_palaces_1.mp4", "encode": "gif2mp4"},
+        {"name": "Eastern_Garden_output_2.gif", "kind": "image", "out": "avt_palaces_2.mp4", "encode": "gif2mp4"},
+        {"name": "Offline_Western_Garden.gif", "kind": "image", "out": "avt_palaces_3.mp4", "encode": "gif2mp4"},
+        {"name": "Offline_ModularSciFiSeason.gif", "kind": "image", "out": "avt_palaces_4.mp4", "encode": "gif2mp4"},
+        {"name": "output.gif", "kind": "image", "out": "avt_wilds_1.mp4", "encode": "gif2mp4"},
+        {"name": "Offline_Greek_Island.gif", "kind": "image", "out": "avt_wilds_2.mp4", "encode": "gif2mp4"},
+        {"name": "EF_Gus_output.gif", "kind": "image", "out": "avt_wilds_3.mp4", "encode": "gif2mp4"},
+        {"name": "Offline_SnowMap.gif", "kind": "image", "out": "avt_wilds_4.mp4", "encode": "gif2mp4"},
+        {"name": "Offline_IndustrialArea.gif", "kind": "image", "out": "avt_modern_1.mp4", "encode": "gif2mp4"},
+        {"name": "Offline_DowntownWest.gif", "kind": "image", "out": "avt_modern_2.mp4", "encode": "gif2mp4"},
+        {"name": "ContainerYard_Day_output.gif", "kind": "image", "out": "avt_modern_3.mp4", "encode": "gif2mp4"},
+        {"name": "Offline_Suburb.gif", "kind": "image", "out": "avt_modern_4.mp4", "encode": "gif2mp4"}
+      ]
+    },
+    {
+      "page_id": "8859589b-2add-4ff8-8c10-ba9e8a40eb05",
+      "title": "UnrealCV+",
+      "media": [
+        {"name": "output_old_Color.gif", "kind": "image", "out": "ucvplus_color_old.mp4", "encode": "gif2mp4"},
+        {"name": "output_new_Color.gif", "kind": "image", "out": "ucvplus_color_new.mp4", "encode": "gif2mp4"},
+        {"name": "output.gif", "kind": "image", "out": "ucvplus_color_old_labeled.mp4", "encode": "gif2mp4"},
+        {"name": "output_new.gif", "kind": "image", "out": "ucvplus_color_new_labeled.mp4", "encode": "gif2mp4"},
+        {"name": "output_old_multiagent.gif", "kind": "image", "out": "ucvplus_multi_old.mp4", "encode": "gif2mp4"},
+        {"name": "output_new_multiagent.gif", "kind": "image", "out": "ucvplus_multi_new.mp4", "encode": "gif2mp4"},
+        {"name": "output_old_multiagent_Mask.gif", "kind": "image", "out": "ucvplus_multi_mask_old.mp4", "encode": "gif2mp4"},
+        {"name": "output_new_multiagent_Mask.gif", "kind": "image", "out": "ucvplus_multi_mask_new.mp4", "encode": "gif2mp4"}
+      ]
+    }
+  ]
+}
