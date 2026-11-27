@@ -90,18 +90,17 @@ def probe_video(path):
 
 
 def probe_image(path):
-    """静态图用 sips 判（ffmpeg 对某些合法 PNG 会报 chunk too big）"""
+    """静态图：纯 Python 解析文件头取尺寸（跨平台；ffmpeg 对合法 PNG 会误报 chunk too big）"""
     errs = []
     try:
-        r = subprocess.run(['sips', '-g', 'pixelWidth', '-g', 'pixelHeight', path],
-                           capture_output=True, text=True, timeout=60)
-        m = re.search(r'pixelWidth:\s*(\d+)', r.stdout or '')
-        n = re.search(r'pixelHeight:\s*(\d+)', r.stdout or '')
-        if not m or not n:
-            return (0, 0.0, 0, 0, ['sips 无法读取尺寸（文件可能损坏）'])
-        return (1, 0.0, int(m.group(1)), int(n.group(1)), errs)
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from image_size import image_size
+        w, h = image_size(path)
+        if not w or not h:
+            return (0, 0.0, 0, 0, ['无法读取图片尺寸（文件可能损坏）'])
+        return (1, 0.0, w, h, errs)
     except Exception as e:
-        return (0, 0.0, 0, 0, [f'sips 调用失败: {e}'])
+        return (0, 0.0, 0, 0, [f'图片尺寸读取失败: {e}'])
 
 
 def check_file(path, min_size, manifest_entry, tol):

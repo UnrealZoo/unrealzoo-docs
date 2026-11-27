@@ -1,0 +1,58 @@
+name: docs-gate
+
+# 媒体完整性 + 构建关卡
+#
+# 背景（2026-11-24 事故）：一批被截断的媒体一路提交并发布到公开仓库，
+# 根因是「下载只判文件存在」+「校验器没有接进任何构建路径」。
+# 本工作流让关卡在服务端强制执行：不过不合并。
+#
+# 关卡内容（见 scripts/build_docs.sh）：
+#   1. 媒体完整性：可解析性 + 帧数 + 时长 + 体积
+#   2. mkdocs build
+#   3. 产物资源引用自检（site/ 内所有本地 src/href 必须存在）
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: docs-gate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    name: media integrity + build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install ffprobe (media validation)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          ffprobe -version | head -1
+
+      - name: Install docs dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Media integrity gate + build + reference check
+        run: bash scripts/build_docs.sh
+
+      - name: Upload built site (artifact)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: site/
+          retention-days: 7

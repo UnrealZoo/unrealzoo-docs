@@ -46,6 +46,15 @@ bash scripts/build_docs.sh
 `scripts/build_docs.sh` refuses to produce `site/` when any media file fails the integrity
 check, and also fails when the built HTML references assets that do not exist.
 
+### CI — the gate runs server-side too
+
+`.github/workflows/docs-gate.yml` runs `scripts/build_docs.sh` on every push and PR to
+`main` (and can be triggered manually). A failing media check, a broken build, or a broken
+asset reference **fails the workflow** — so corrupted media cannot reach `main` by accident.
+
+The workflow installs `ffprobe` (media validation) and the docs dependencies, then runs the
+same script you can run locally.
+
 ### The integrity gate
 
 ```bash
